@@ -1,4 +1,7 @@
-"""A client library for accessing ODPT API"""
+"""
+.. include:: ../README.md
+
+A client library for accessing ODPT API"""
 
 from .client import AuthenticatedClient, Client
 
