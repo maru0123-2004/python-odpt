@@ -18,7 +18,7 @@ jobs:
           python-version: 3.9
       - name: Build
         run: |
-          pip install pdoc3 httpx
+          pip install pdoc3 httpx attrs
           pdoc --html --output-dir tmp --force python_odpt
 
       - name: Deploy
