@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.1">
+<title>python_odpt.models.busroute_pattern_fare API documentation</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>python_odpt.models.busroute_pattern_fare</code></h1>
+</header>
+<section id="section-intro">
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare"><code class="flex name class">
+<span>class <span class="ident">BusroutePatternFare</span></span>
+<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType" href="busroute_pattern_fare_type.html#python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType">BusroutePatternFareType</a>, owlsame_as: str, dcdate: str, odptoperator: str, odptfrom_busroute_pattern: str, odptfrom_busstop_pole_order: int, odptfrom_busstop_pole: str, odptto_busroute_pattern: str, odptto_busstop_pole_order: int, odptto_busstop_pole: str, odptticket_fare: int, dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptchild_ticket_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptchild_ic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>乗車バス停(標柱)、降車バス停(標柱)についての運賃情報</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>context</code></strong> :&ensp;<code>str</code></dt>
+<dd>JSON-LD仕様に基づく @context のURL Example: <a href="http://vocab.odpt.org/context_odpt.jsonld.">http://vocab.odpt.org/context_odpt.jsonld.</a></dd>
+<dt><strong><code>id</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子</dd>
+<dt><strong><code>type</code></strong> :&ensp;<code>BusroutePatternFareType</code></dt>
+<dd>バス運賃のクラス名、"odpt:BusroutePatternFare"が入る Example: odpt:BusroutePatternFare.</dd>
+<dt><strong><code>owlsame_as</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>dcdate</code></strong> :&ensp;<code>str</code></dt>
+<dd>ISO8601 日付時刻形式</dd>
+<dt><strong><code>odptoperator</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>odptfrom_busroute_pattern</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>odptfrom_busstop_pole_order</code></strong> :&ensp;<code>int</code></dt>
+<dd>乗車停留所の系統パターン内の停留所 (標柱) 通過順。odpt:fromBusroutePattern の示す odpt:BusroutePattern
+の、 odpt:busstopPoleOrder の odpt:index と同じ値。 Example: 25.</dd>
+<dt><strong><code>odptfrom_busstop_pole</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>odptto_busroute_pattern</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>odptto_busstop_pole_order</code></strong> :&ensp;<code>int</code></dt>
+<dd>降車停留所の系統パターン内の停留所 (標柱) 通過順。odpt:toBusroutePattern の示す odpt:BusroutePattern の、
+odpt:busstopPoleOrder の odpt:index と同じ値。 Example: 27.</dd>
+<dt><strong><code>odptto_busstop_pole</code></strong> :&ensp;<code>str</code></dt>
+<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
+<dt><strong><code>odptticket_fare</code></strong> :&ensp;<code>int</code></dt>
+<dd>切符利用時の運賃 (円) Example: 200.</dd>
+<dt><strong><code>dctissued</code></strong> :&ensp;<code>Union[Unset, str]</code></dt>
+<dd>ISO8601 日付形式</dd>
+<dt><strong><code>dctvalid</code></strong> :&ensp;<code>Union[Unset, str]</code></dt>
+<dd>ISO8601 日付時刻形式</dd>
+<dt><strong><code>odptchild_ticket_fare</code></strong> :&ensp;<code>Union[Unset, int]</code></dt>
+<dd>切符利用時の子供運賃 (円) Example: 100.</dd>
+<dt><strong><code>odptic_card_fare</code></strong> :&ensp;<code>Union[Unset, int]</code></dt>
+<dd>ICカード利用時の運賃 (円) Example: 200.</dd>
+<dt><strong><code>odptchild_ic_card_fare</code></strong> :&ensp;<code>Union[Unset, int]</code></dt>
+<dd>ICカード利用時の子供運賃 (円) Example: 100.</dd>
+</dl>
+<p>Method generated by attrs for class BusroutePatternFare.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@_attrs_define
+class BusroutePatternFare:
+    &#34;&#34;&#34;乗車バス停(標柱)、降車バス停(標柱)についての運賃情報
+
+    Attributes:
+        context (str): JSON-LD仕様に基づく @context のURL Example: http://vocab.odpt.org/context_odpt.jsonld.
+        id (str): 固有識別子
+        type (BusroutePatternFareType): バス運賃のクラス名、&#34;odpt:BusroutePatternFare&#34;が入る Example: odpt:BusroutePatternFare.
+        owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        dcdate (str): ISO8601 日付時刻形式
+        odptoperator (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        odptfrom_busroute_pattern (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        odptfrom_busstop_pole_order (int): 乗車停留所の系統パターン内の停留所 (標柱) 通過順。odpt:fromBusroutePattern の示す odpt:BusroutePattern
+            の、 odpt:busstopPoleOrder の odpt:index と同じ値。 Example: 25.
+        odptfrom_busstop_pole (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        odptto_busroute_pattern (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        odptto_busstop_pole_order (int): 降車停留所の系統パターン内の停留所 (標柱) 通過順。odpt:toBusroutePattern の示す odpt:BusroutePattern の、
+            odpt:busstopPoleOrder の odpt:index と同じ値。 Example: 27.
+        odptto_busstop_pole (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+        odptticket_fare (int): 切符利用時の運賃 (円) Example: 200.
+        dctissued (Union[Unset, str]): ISO8601 日付形式
+        dctvalid (Union[Unset, str]): ISO8601 日付時刻形式
+        odptchild_ticket_fare (Union[Unset, int]): 切符利用時の子供運賃 (円) Example: 100.
+        odptic_card_fare (Union[Unset, int]): ICカード利用時の運賃 (円) Example: 200.
+        odptchild_ic_card_fare (Union[Unset, int]): ICカード利用時の子供運賃 (円) Example: 100.
+    &#34;&#34;&#34;
+
+    context: str
+    id: str
+    type: BusroutePatternFareType
+    owlsame_as: str
+    dcdate: str
+    odptoperator: str
+    odptfrom_busroute_pattern: str
+    odptfrom_busstop_pole_order: int
+    odptfrom_busstop_pole: str
+    odptto_busroute_pattern: str
+    odptto_busstop_pole_order: int
+    odptto_busstop_pole: str
+    odptticket_fare: int
+    dctissued: Union[Unset, str] = UNSET
+    dctvalid: Union[Unset, str] = UNSET
+    odptchild_ticket_fare: Union[Unset, int] = UNSET
+    odptic_card_fare: Union[Unset, int] = UNSET
+    odptchild_ic_card_fare: Union[Unset, int] = UNSET
+    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
+
+    def to_dict(self) -&gt; Dict[str, Any]:
+        context = self.context
+
+        id = self.id
+
+        type = self.type.value
+
+        owlsame_as = self.owlsame_as
+
+        dcdate = self.dcdate
+
+        odptoperator = self.odptoperator
+
+        odptfrom_busroute_pattern = self.odptfrom_busroute_pattern
+
+        odptfrom_busstop_pole_order = self.odptfrom_busstop_pole_order
+
+        odptfrom_busstop_pole = self.odptfrom_busstop_pole
+
+        odptto_busroute_pattern = self.odptto_busroute_pattern
+
+        odptto_busstop_pole_order = self.odptto_busstop_pole_order
+
+        odptto_busstop_pole = self.odptto_busstop_pole
+
+        odptticket_fare = self.odptticket_fare
+
+        dctissued = self.dctissued
+
+        dctvalid = self.dctvalid
+
+        odptchild_ticket_fare = self.odptchild_ticket_fare
+
+        odptic_card_fare = self.odptic_card_fare
+
+        odptchild_ic_card_fare = self.odptchild_ic_card_fare
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update(self.additional_properties)
+        field_dict.update(
+            {
+                &#34;@context&#34;: context,
+                &#34;@id&#34;: id,
+                &#34;@type&#34;: type,
+                &#34;owl:sameAs&#34;: owlsame_as,
+                &#34;dc:date&#34;: dcdate,
+                &#34;odpt:operator&#34;: odptoperator,
+                &#34;odpt:fromBusroutePattern&#34;: odptfrom_busroute_pattern,
+                &#34;odpt:fromBusstopPoleOrder&#34;: odptfrom_busstop_pole_order,
+                &#34;odpt:fromBusstopPole&#34;: odptfrom_busstop_pole,
+                &#34;odpt:toBusroutePattern&#34;: odptto_busroute_pattern,
+                &#34;odpt:toBusstopPoleOrder&#34;: odptto_busstop_pole_order,
+                &#34;odpt:toBusstopPole&#34;: odptto_busstop_pole,
+                &#34;odpt:ticketFare&#34;: odptticket_fare,
+            }
+        )
+        if dctissued is not UNSET:
+            field_dict[&#34;dct:issued&#34;] = dctissued
+        if dctvalid is not UNSET:
+            field_dict[&#34;dct:valid&#34;] = dctvalid
+        if odptchild_ticket_fare is not UNSET:
+            field_dict[&#34;odpt:childTicketFare&#34;] = odptchild_ticket_fare
+        if odptic_card_fare is not UNSET:
+            field_dict[&#34;odpt:icCardFare&#34;] = odptic_card_fare
+        if odptchild_ic_card_fare is not UNSET:
+            field_dict[&#34;odpt:childIcCardFare&#34;] = odptchild_ic_card_fare
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
+        d = src_dict.copy()
+        context = d.pop(&#34;@context&#34;)
+
+        id = d.pop(&#34;@id&#34;)
+
+        type = BusroutePatternFareType(d.pop(&#34;@type&#34;))
+
+        owlsame_as = d.pop(&#34;owl:sameAs&#34;)
+
+        dcdate = d.pop(&#34;dc:date&#34;)
+
+        odptoperator = d.pop(&#34;odpt:operator&#34;)
+
+        odptfrom_busroute_pattern = d.pop(&#34;odpt:fromBusroutePattern&#34;)
+
+        odptfrom_busstop_pole_order = d.pop(&#34;odpt:fromBusstopPoleOrder&#34;)
+
+        odptfrom_busstop_pole = d.pop(&#34;odpt:fromBusstopPole&#34;)
+
+        odptto_busroute_pattern = d.pop(&#34;odpt:toBusroutePattern&#34;)
+
+        odptto_busstop_pole_order = d.pop(&#34;odpt:toBusstopPoleOrder&#34;)
+
+        odptto_busstop_pole = d.pop(&#34;odpt:toBusstopPole&#34;)
+
+        odptticket_fare = d.pop(&#34;odpt:ticketFare&#34;)
+
+        dctissued = d.pop(&#34;dct:issued&#34;, UNSET)
+
+        dctvalid = d.pop(&#34;dct:valid&#34;, UNSET)
+
+        odptchild_ticket_fare = d.pop(&#34;odpt:childTicketFare&#34;, UNSET)
+
+        odptic_card_fare = d.pop(&#34;odpt:icCardFare&#34;, UNSET)
+
+        odptchild_ic_card_fare = d.pop(&#34;odpt:childIcCardFare&#34;, UNSET)
+
+        busroute_pattern_fare = cls(
+            context=context,
+            id=id,
+            type=type,
+            owlsame_as=owlsame_as,
+            dcdate=dcdate,
+            odptoperator=odptoperator,
+            odptfrom_busroute_pattern=odptfrom_busroute_pattern,
+            odptfrom_busstop_pole_order=odptfrom_busstop_pole_order,
+            odptfrom_busstop_pole=odptfrom_busstop_pole,
+            odptto_busroute_pattern=odptto_busroute_pattern,
+            odptto_busstop_pole_order=odptto_busstop_pole_order,
+            odptto_busstop_pole=odptto_busstop_pole,
+            odptticket_fare=odptticket_fare,
+            dctissued=dctissued,
+            dctvalid=dctvalid,
+            odptchild_ticket_fare=odptchild_ticket_fare,
+            odptic_card_fare=odptic_card_fare,
+            odptchild_ic_card_fare=odptchild_ic_card_fare,
+        )
+
+        busroute_pattern_fare.additional_properties = d
+        return busroute_pattern_fare
+
+    @property
+    def additional_keys(self) -&gt; List[str]:
+        return list(self.additional_properties.keys())
+
+    def __getitem__(self, key: str) -&gt; Any:
+        return self.additional_properties[key]
+
+    def __setitem__(self, key: str, value: Any) -&gt; None:
+        self.additional_properties[key] = value
+
+    def __delitem__(self, key: str) -&gt; None:
+        del self.additional_properties[key]
+
+    def __contains__(self, key: str) -&gt; bool:
+        return key in self.additional_properties</code></pre>
+</details>
+<h3>Static methods</h3>
+<dl>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.from_dict"><code class="name flex">
+<span>def <span class="ident">from_dict</span></span>(<span>src_dict: Dict[str, Any]) ‑> ~T</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_keys"><code class="name">prop <span class="ident">additional_keys</span> : List[str]</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def additional_keys(self) -&gt; List[str]:
+    return list(self.additional_properties.keys())</code></pre>
+</details>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_properties"><code class="name">var <span class="ident">additional_properties</span> : Dict[str, Any]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.context"><code class="name">var <span class="ident">context</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dcdate"><code class="name">var <span class="ident">dcdate</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctissued"><code class="name">var <span class="ident">dctissued</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.id"><code class="name">var <span class="ident">id</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ic_card_fare"><code class="name">var <span class="ident">odptchild_ic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ticket_fare"><code class="name">var <span class="ident">odptchild_ticket_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busroute_pattern"><code class="name">var <span class="ident">odptfrom_busroute_pattern</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole"><code class="name">var <span class="ident">odptfrom_busstop_pole</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole_order"><code class="name">var <span class="ident">odptfrom_busstop_pole_order</span> : int</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptic_card_fare"><code class="name">var <span class="ident">odptic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptoperator"><code class="name">var <span class="ident">odptoperator</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptticket_fare"><code class="name">var <span class="ident">odptticket_fare</span> : int</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busroute_pattern"><code class="name">var <span class="ident">odptto_busroute_pattern</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole"><code class="name">var <span class="ident">odptto_busstop_pole</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole_order"><code class="name">var <span class="ident">odptto_busstop_pole_order</span> : int</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.owlsame_as"><code class="name">var <span class="ident">owlsame_as</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.type"><code class="name">var <span class="ident">type</span> : <a title="python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType" href="busroute_pattern_fare_type.html#python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType">BusroutePatternFareType</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.to_dict"><code class="name flex">
+<span>def <span class="ident">to_dict</span></span>(<span>self) ‑> Dict[str, Any]</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="python_odpt.models" href="index.html">python_odpt.models</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare">BusroutePatternFare</a></code></h4>
+<ul class="">
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_keys" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_keys">additional_keys</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_properties" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.additional_properties">additional_properties</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.context" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.context">context</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dcdate" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dcdate">dcdate</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctissued" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctissued">dctissued</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctvalid" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.dctvalid">dctvalid</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.from_dict" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.from_dict">from_dict</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.id" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.id">id</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ic_card_fare" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ic_card_fare">odptchild_ic_card_fare</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ticket_fare" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptchild_ticket_fare">odptchild_ticket_fare</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busroute_pattern" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busroute_pattern">odptfrom_busroute_pattern</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole">odptfrom_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole_order" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptfrom_busstop_pole_order">odptfrom_busstop_pole_order</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptic_card_fare" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptic_card_fare">odptic_card_fare</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptoperator" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptoperator">odptoperator</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptticket_fare" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptticket_fare">odptticket_fare</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busroute_pattern" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busroute_pattern">odptto_busroute_pattern</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole">odptto_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole_order" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.odptto_busstop_pole_order">odptto_busstop_pole_order</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.owlsame_as" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.owlsame_as">owlsame_as</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.to_dict" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.to_dict">to_dict</a></code></li>
+<li><code><a title="python_odpt.models.busroute_pattern_fare.BusroutePatternFare.type" href="#python_odpt.models.busroute_pattern_fare.BusroutePatternFare.type">type</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.1</a>.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.1">
+<title>python_odpt.models.bus API documentation</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>python_odpt.models.bus</code></h1>
+</header>
+<section id="section-intro">
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="python_odpt.models.bus.Bus"><code class="flex name class">
+<span>class <span class="ident">Bus</span></span>
+<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.bus_type.BusType" href="bus_type.html#python_odpt.models.bus_type.BusType">BusType</a>, owlsame_as: str, odptbus_number: str, dcdate: str, dctvalid: str, odptfrequency: int, odptbusroute_pattern: str, odptoperator: str, odptbus_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptstarting_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptterminal_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptfrom_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptfrom_busstop_pole_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptto_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptprogress: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptspeed: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptazimuth: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptdoor_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a>] = &lt;python_odpt.types.Unset object&gt;, odptoccupancy_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a>] = &lt;python_odpt.types.Unset object&gt;)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>バスの運行情報
+<code>odpt:busroutePattern</code> が運行中の系統を示し、 <code>odpt:fromBusstopPole</code>, <code>odpt:toBusstopPole</code> で現在位置を示す。
+接近中の判別がつかない場合は、<code>odpt:fromBusstopPole</code> は null とはならない場合がある。
+停車中の判別がつかない場合は、<code>odpt:toBusstopPole</code> は null とはならない場合がある。
+odpt:occupancyStatus は車両の混雑度を示す。</p>
+<pre><code>Attributes:
+    context (str): JSON-LD仕様に基づく @context のURL Example: &lt;http://vocab.odpt.org/context_odpt_Bus.jsonld.&gt;
+    id (str): 固有識別子
+    type (BusType): バス運行情報のクラス名 Example: odpt:Bus.
+    owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptbus_number (str): バス車両番号 Example: 1889.
+    dcdate (str): ISO8601 日付時刻形式
+    dctvalid (str): ISO8601 日付時刻形式
+    odptfrequency (int): 更新頻度(秒)、指定された秒数以降にリクエストを行うことで、最新値が取得される。 Example: 30.
+    odptbusroute_pattern (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptoperator (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptbus_timetable (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptstarting_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptterminal_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptfrom_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptfrom_busstop_pole_time (Union[Unset, str]): ISO8601 日付時刻形式
+    odptto_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+    odptprogress (Union[Unset, float]): Fromを0, Toを1とした際の現在位置 (割合)
+    geolong (Union[Unset, float]): 対象となるバスの経度 (10進表記、測地系はWGS84) Example: 139.63494873046875.
+    geolat (Union[Unset, float]): 対象となるバスの緯度 (10進表記、測地系はWGS84) Example: 35.41614532470703.
+    odptspeed (Union[Unset, float]): 対象となるバスの速度 (km/h)
+    odptazimuth (Union[Unset, float]): 対象となるバスの進行方向方位角を示す。単位は度(°)。北が0度で、時計回り(東回り)に増加する。 Example: 249.9993896484375.
+    odptdoor_status (Union[Unset, BusDoorStatus]):
+    odptoccupancy_status (Union[Unset, OccupancyStatus]):
+</code></pre>
+<p>Method generated by attrs for class Bus.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@_attrs_define
+class Bus:
+    &#34;&#34;&#34;バスの運行情報
+    `odpt:busroutePattern` が運行中の系統を示し、 `odpt:fromBusstopPole`, `odpt:toBusstopPole` で現在位置を示す。
+    接近中の判別がつかない場合は、`odpt:fromBusstopPole` は null とはならない場合がある。
+    停車中の判別がつかない場合は、`odpt:toBusstopPole` は null とはならない場合がある。
+    odpt:occupancyStatus は車両の混雑度を示す。
+
+        Attributes:
+            context (str): JSON-LD仕様に基づく @context のURL Example: http://vocab.odpt.org/context_odpt_Bus.jsonld.
+            id (str): 固有識別子
+            type (BusType): バス運行情報のクラス名 Example: odpt:Bus.
+            owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptbus_number (str): バス車両番号 Example: 1889.
+            dcdate (str): ISO8601 日付時刻形式
+            dctvalid (str): ISO8601 日付時刻形式
+            odptfrequency (int): 更新頻度(秒)、指定された秒数以降にリクエストを行うことで、最新値が取得される。 Example: 30.
+            odptbusroute_pattern (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptoperator (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptbus_timetable (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptstarting_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptterminal_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptfrom_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptfrom_busstop_pole_time (Union[Unset, str]): ISO8601 日付時刻形式
+            odptto_busstop_pole (Union[Unset, str]): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
+            odptprogress (Union[Unset, float]): Fromを0, Toを1とした際の現在位置 (割合)
+            geolong (Union[Unset, float]): 対象となるバスの経度 (10進表記、測地系はWGS84) Example: 139.63494873046875.
+            geolat (Union[Unset, float]): 対象となるバスの緯度 (10進表記、測地系はWGS84) Example: 35.41614532470703.
+            odptspeed (Union[Unset, float]): 対象となるバスの速度 (km/h)
+            odptazimuth (Union[Unset, float]): 対象となるバスの進行方向方位角を示す。単位は度(°)。北が0度で、時計回り(東回り)に増加する。 Example: 249.9993896484375.
+            odptdoor_status (Union[Unset, BusDoorStatus]):
+            odptoccupancy_status (Union[Unset, OccupancyStatus]):
+    &#34;&#34;&#34;
+
+    context: str
+    id: str
+    type: BusType
+    owlsame_as: str
+    odptbus_number: str
+    dcdate: str
+    dctvalid: str
+    odptfrequency: int
+    odptbusroute_pattern: str
+    odptoperator: str
+    odptbus_timetable: Union[Unset, str] = UNSET
+    odptstarting_busstop_pole: Union[Unset, str] = UNSET
+    odptterminal_busstop_pole: Union[Unset, str] = UNSET
+    odptfrom_busstop_pole: Union[Unset, str] = UNSET
+    odptfrom_busstop_pole_time: Union[Unset, str] = UNSET
+    odptto_busstop_pole: Union[Unset, str] = UNSET
+    odptprogress: Union[Unset, float] = UNSET
+    geolong: Union[Unset, float] = UNSET
+    geolat: Union[Unset, float] = UNSET
+    odptspeed: Union[Unset, float] = UNSET
+    odptazimuth: Union[Unset, float] = UNSET
+    odptdoor_status: Union[Unset, BusDoorStatus] = UNSET
+    odptoccupancy_status: Union[Unset, OccupancyStatus] = UNSET
+    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
+
+    def to_dict(self) -&gt; Dict[str, Any]:
+        context = self.context
+
+        id = self.id
+
+        type = self.type.value
+
+        owlsame_as = self.owlsame_as
+
+        odptbus_number = self.odptbus_number
+
+        dcdate = self.dcdate
+
+        dctvalid = self.dctvalid
+
+        odptfrequency = self.odptfrequency
+
+        odptbusroute_pattern = self.odptbusroute_pattern
+
+        odptoperator = self.odptoperator
+
+        odptbus_timetable = self.odptbus_timetable
+
+        odptstarting_busstop_pole = self.odptstarting_busstop_pole
+
+        odptterminal_busstop_pole = self.odptterminal_busstop_pole
+
+        odptfrom_busstop_pole = self.odptfrom_busstop_pole
+
+        odptfrom_busstop_pole_time = self.odptfrom_busstop_pole_time
+
+        odptto_busstop_pole = self.odptto_busstop_pole
+
+        odptprogress = self.odptprogress
+
+        geolong = self.geolong
+
+        geolat = self.geolat
+
+        odptspeed = self.odptspeed
+
+        odptazimuth = self.odptazimuth
+
+        odptdoor_status: Union[Unset, str] = UNSET
+        if not isinstance(self.odptdoor_status, Unset):
+            odptdoor_status = self.odptdoor_status.value
+
+        odptoccupancy_status: Union[Unset, str] = UNSET
+        if not isinstance(self.odptoccupancy_status, Unset):
+            odptoccupancy_status = self.odptoccupancy_status.value
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update(self.additional_properties)
+        field_dict.update(
+            {
+                &#34;@context&#34;: context,
+                &#34;@id&#34;: id,
+                &#34;@type&#34;: type,
+                &#34;owl:sameAs&#34;: owlsame_as,
+                &#34;odpt:busNumber&#34;: odptbus_number,
+                &#34;dc:date&#34;: dcdate,
+                &#34;dct:valid&#34;: dctvalid,
+                &#34;odpt:frequency&#34;: odptfrequency,
+                &#34;odpt:busroutePattern&#34;: odptbusroute_pattern,
+                &#34;odpt:operator&#34;: odptoperator,
+            }
+        )
+        if odptbus_timetable is not UNSET:
+            field_dict[&#34;odpt:busTimetable&#34;] = odptbus_timetable
+        if odptstarting_busstop_pole is not UNSET:
+            field_dict[&#34;odpt:startingBusstopPole&#34;] = odptstarting_busstop_pole
+        if odptterminal_busstop_pole is not UNSET:
+            field_dict[&#34;odpt:terminalBusstopPole&#34;] = odptterminal_busstop_pole
+        if odptfrom_busstop_pole is not UNSET:
+            field_dict[&#34;odpt:fromBusstopPole&#34;] = odptfrom_busstop_pole
+        if odptfrom_busstop_pole_time is not UNSET:
+            field_dict[&#34;odpt:fromBusstopPoleTime&#34;] = odptfrom_busstop_pole_time
+        if odptto_busstop_pole is not UNSET:
+            field_dict[&#34;odpt:toBusstopPole&#34;] = odptto_busstop_pole
+        if odptprogress is not UNSET:
+            field_dict[&#34;odpt:progress&#34;] = odptprogress
+        if geolong is not UNSET:
+            field_dict[&#34;geo:long&#34;] = geolong
+        if geolat is not UNSET:
+            field_dict[&#34;geo:lat&#34;] = geolat
+        if odptspeed is not UNSET:
+            field_dict[&#34;odpt:speed&#34;] = odptspeed
+        if odptazimuth is not UNSET:
+            field_dict[&#34;odpt:azimuth&#34;] = odptazimuth
+        if odptdoor_status is not UNSET:
+            field_dict[&#34;odpt:doorStatus&#34;] = odptdoor_status
+        if odptoccupancy_status is not UNSET:
+            field_dict[&#34;odpt:occupancyStatus&#34;] = odptoccupancy_status
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
+        d = src_dict.copy()
+        context = d.pop(&#34;@context&#34;)
+
+        id = d.pop(&#34;@id&#34;)
+
+        type = BusType(d.pop(&#34;@type&#34;))
+
+        owlsame_as = d.pop(&#34;owl:sameAs&#34;)
+
+        odptbus_number = d.pop(&#34;odpt:busNumber&#34;)
+
+        dcdate = d.pop(&#34;dc:date&#34;)
+
+        dctvalid = d.pop(&#34;dct:valid&#34;)
+
+        odptfrequency = d.pop(&#34;odpt:frequency&#34;)
+
+        odptbusroute_pattern = d.pop(&#34;odpt:busroutePattern&#34;)
+
+        odptoperator = d.pop(&#34;odpt:operator&#34;)
+
+        odptbus_timetable = d.pop(&#34;odpt:busTimetable&#34;, UNSET)
+
+        odptstarting_busstop_pole = d.pop(&#34;odpt:startingBusstopPole&#34;, UNSET)
+
+        odptterminal_busstop_pole = d.pop(&#34;odpt:terminalBusstopPole&#34;, UNSET)
+
+        odptfrom_busstop_pole = d.pop(&#34;odpt:fromBusstopPole&#34;, UNSET)
+
+        odptfrom_busstop_pole_time = d.pop(&#34;odpt:fromBusstopPoleTime&#34;, UNSET)
+
+        odptto_busstop_pole = d.pop(&#34;odpt:toBusstopPole&#34;, UNSET)
+
+        odptprogress = d.pop(&#34;odpt:progress&#34;, UNSET)
+
+        geolong = d.pop(&#34;geo:long&#34;, UNSET)
+
+        geolat = d.pop(&#34;geo:lat&#34;, UNSET)
+
+        odptspeed = d.pop(&#34;odpt:speed&#34;, UNSET)
+
+        odptazimuth = d.pop(&#34;odpt:azimuth&#34;, UNSET)
+
+        _odptdoor_status = d.pop(&#34;odpt:doorStatus&#34;, UNSET)
+        odptdoor_status: Union[Unset, BusDoorStatus]
+        if isinstance(_odptdoor_status, Unset):
+            odptdoor_status = UNSET
+        else:
+            odptdoor_status = BusDoorStatus(_odptdoor_status)
+
+        _odptoccupancy_status = d.pop(&#34;odpt:occupancyStatus&#34;, UNSET)
+        odptoccupancy_status: Union[Unset, OccupancyStatus]
+        if isinstance(_odptoccupancy_status, Unset):
+            odptoccupancy_status = UNSET
+        else:
+            odptoccupancy_status = OccupancyStatus(_odptoccupancy_status)
+
+        bus = cls(
+            context=context,
+            id=id,
+            type=type,
+            owlsame_as=owlsame_as,
+            odptbus_number=odptbus_number,
+            dcdate=dcdate,
+            dctvalid=dctvalid,
+            odptfrequency=odptfrequency,
+            odptbusroute_pattern=odptbusroute_pattern,
+            odptoperator=odptoperator,
+            odptbus_timetable=odptbus_timetable,
+            odptstarting_busstop_pole=odptstarting_busstop_pole,
+            odptterminal_busstop_pole=odptterminal_busstop_pole,
+            odptfrom_busstop_pole=odptfrom_busstop_pole,
+            odptfrom_busstop_pole_time=odptfrom_busstop_pole_time,
+            odptto_busstop_pole=odptto_busstop_pole,
+            odptprogress=odptprogress,
+            geolong=geolong,
+            geolat=geolat,
+            odptspeed=odptspeed,
+            odptazimuth=odptazimuth,
+            odptdoor_status=odptdoor_status,
+            odptoccupancy_status=odptoccupancy_status,
+        )
+
+        bus.additional_properties = d
+        return bus
+
+    @property
+    def additional_keys(self) -&gt; List[str]:
+        return list(self.additional_properties.keys())
+
+    def __getitem__(self, key: str) -&gt; Any:
+        return self.additional_properties[key]
+
+    def __setitem__(self, key: str, value: Any) -&gt; None:
+        self.additional_properties[key] = value
+
+    def __delitem__(self, key: str) -&gt; None:
+        del self.additional_properties[key]
+
+    def __contains__(self, key: str) -&gt; bool:
+        return key in self.additional_properties</code></pre>
+</details>
+<h3>Static methods</h3>
+<dl>
+<dt id="python_odpt.models.bus.Bus.from_dict"><code class="name flex">
+<span>def <span class="ident">from_dict</span></span>(<span>src_dict: Dict[str, Any]) ‑> ~T</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="python_odpt.models.bus.Bus.additional_keys"><code class="name">prop <span class="ident">additional_keys</span> : List[str]</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def additional_keys(self) -&gt; List[str]:
+    return list(self.additional_properties.keys())</code></pre>
+</details>
+</dd>
+<dt id="python_odpt.models.bus.Bus.additional_properties"><code class="name">var <span class="ident">additional_properties</span> : Dict[str, Any]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.context"><code class="name">var <span class="ident">context</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.dcdate"><code class="name">var <span class="ident">dcdate</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.geolat"><code class="name">var <span class="ident">geolat</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.geolong"><code class="name">var <span class="ident">geolong</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.id"><code class="name">var <span class="ident">id</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptazimuth"><code class="name">var <span class="ident">odptazimuth</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptbus_number"><code class="name">var <span class="ident">odptbus_number</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptbus_timetable"><code class="name">var <span class="ident">odptbus_timetable</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptbusroute_pattern"><code class="name">var <span class="ident">odptbusroute_pattern</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptdoor_status"><code class="name">var <span class="ident">odptdoor_status</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a>]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptfrequency"><code class="name">var <span class="ident">odptfrequency</span> : int</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptfrom_busstop_pole"><code class="name">var <span class="ident">odptfrom_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptfrom_busstop_pole_time"><code class="name">var <span class="ident">odptfrom_busstop_pole_time</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptoccupancy_status"><code class="name">var <span class="ident">odptoccupancy_status</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a>]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptoperator"><code class="name">var <span class="ident">odptoperator</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptprogress"><code class="name">var <span class="ident">odptprogress</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptspeed"><code class="name">var <span class="ident">odptspeed</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptstarting_busstop_pole"><code class="name">var <span class="ident">odptstarting_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptterminal_busstop_pole"><code class="name">var <span class="ident">odptterminal_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.odptto_busstop_pole"><code class="name">var <span class="ident">odptto_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.owlsame_as"><code class="name">var <span class="ident">owlsame_as</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="python_odpt.models.bus.Bus.type"><code class="name">var <span class="ident">type</span> : <a title="python_odpt.models.bus_type.BusType" href="bus_type.html#python_odpt.models.bus_type.BusType">BusType</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="python_odpt.models.bus.Bus.to_dict"><code class="name flex">
+<span>def <span class="ident">to_dict</span></span>(<span>self) ‑> Dict[str, Any]</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="python_odpt.models" href="index.html">python_odpt.models</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="python_odpt.models.bus.Bus" href="#python_odpt.models.bus.Bus">Bus</a></code></h4>
+<ul class="">
+<li><code><a title="python_odpt.models.bus.Bus.additional_keys" href="#python_odpt.models.bus.Bus.additional_keys">additional_keys</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.additional_properties" href="#python_odpt.models.bus.Bus.additional_properties">additional_properties</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.context" href="#python_odpt.models.bus.Bus.context">context</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.dcdate" href="#python_odpt.models.bus.Bus.dcdate">dcdate</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.dctvalid" href="#python_odpt.models.bus.Bus.dctvalid">dctvalid</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.from_dict" href="#python_odpt.models.bus.Bus.from_dict">from_dict</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.geolat" href="#python_odpt.models.bus.Bus.geolat">geolat</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.geolong" href="#python_odpt.models.bus.Bus.geolong">geolong</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.id" href="#python_odpt.models.bus.Bus.id">id</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptazimuth" href="#python_odpt.models.bus.Bus.odptazimuth">odptazimuth</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptbus_number" href="#python_odpt.models.bus.Bus.odptbus_number">odptbus_number</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptbus_timetable" href="#python_odpt.models.bus.Bus.odptbus_timetable">odptbus_timetable</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptbusroute_pattern" href="#python_odpt.models.bus.Bus.odptbusroute_pattern">odptbusroute_pattern</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptdoor_status" href="#python_odpt.models.bus.Bus.odptdoor_status">odptdoor_status</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptfrequency" href="#python_odpt.models.bus.Bus.odptfrequency">odptfrequency</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptfrom_busstop_pole" href="#python_odpt.models.bus.Bus.odptfrom_busstop_pole">odptfrom_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptfrom_busstop_pole_time" href="#python_odpt.models.bus.Bus.odptfrom_busstop_pole_time">odptfrom_busstop_pole_time</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptoccupancy_status" href="#python_odpt.models.bus.Bus.odptoccupancy_status">odptoccupancy_status</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptoperator" href="#python_odpt.models.bus.Bus.odptoperator">odptoperator</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptprogress" href="#python_odpt.models.bus.Bus.odptprogress">odptprogress</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptspeed" href="#python_odpt.models.bus.Bus.odptspeed">odptspeed</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptstarting_busstop_pole" href="#python_odpt.models.bus.Bus.odptstarting_busstop_pole">odptstarting_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptterminal_busstop_pole" href="#python_odpt.models.bus.Bus.odptterminal_busstop_pole">odptterminal_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.odptto_busstop_pole" href="#python_odpt.models.bus.Bus.odptto_busstop_pole">odptto_busstop_pole</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.owlsame_as" href="#python_odpt.models.bus.Bus.owlsame_as">owlsame_as</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.to_dict" href="#python_odpt.models.bus.Bus.to_dict">to_dict</a></code></li>
+<li><code><a title="python_odpt.models.bus.Bus.type" href="#python_odpt.models.bus.Bus.type">type</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.1</a>.</p>
+</footer>
+</body>
+</html>
