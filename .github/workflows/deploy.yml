@@ -9,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -22,8 +24,6 @@ jobs:
           pdoc --html --output-dir tmp --force python_odpt
 
       - name: Deploy
-        permissions:
-          contents: write
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
