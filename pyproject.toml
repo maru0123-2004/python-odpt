@@ -1,10 +1,18 @@
 [tool.poetry]
 name = "python-odpt"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python client for ODPT(Open Data of Public Transportation) API"
 authors = ["Maruo.S <raspi-maru2004@outlook.jp>"]
 license = "MIT"
 readme = "README.md"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Utilities",
+    "Topic :: Scientific/Engineering :: GIS"
+]
+homepage = "https://github.com/maru0123-2004/python-odpt/"
+documentation = "https://maru0123-2004.github.io/python-odpt/"
 
 [tool.poetry.dependencies]
 python = "^3.10"
