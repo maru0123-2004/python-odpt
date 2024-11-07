@@ -150,7 +150,7 @@ class TrainType:
 
         _odpttrain_type_title = d.pop(&#34;odpt:trainTypeTitle&#34;, UNSET)
         odpttrain_type_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_type_title, Unset):
+        if isinstance(_odpttrain_type_title, Unset) or _odpttrain_type_title is None:
             odpttrain_type_title = UNSET
         else:
             odpttrain_type_title = MultilingualTitle.from_dict(_odpttrain_type_title)

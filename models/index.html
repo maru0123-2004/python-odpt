@@ -458,7 +458,7 @@ class Airport:
 
         _odptairport_title = d.pop(&#34;odpt:airportTitle&#34;, UNSET)
         odptairport_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptairport_title, Unset):
+        if isinstance(_odptairport_title, Unset) or _odptairport_title is None:
             odptairport_title = UNSET
         else:
             odptairport_title = MultilingualTitle.from_dict(_odptairport_title)
@@ -471,7 +471,7 @@ class Airport:
 
         _ugregion = d.pop(&#34;ug:region&#34;, UNSET)
         ugregion: Union[Unset, AirportUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = AirportUgregion.from_dict(_ugregion)
@@ -733,7 +733,7 @@ class AirportTerminal:
 
         _odptairport_terminal_title = d.pop(&#34;odpt:airportTerminalTitle&#34;, UNSET)
         odptairport_terminal_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptairport_terminal_title, Unset):
+        if isinstance(_odptairport_terminal_title, Unset) or _odptairport_terminal_title is None:
             odptairport_terminal_title = UNSET
         else:
             odptairport_terminal_title = MultilingualTitle.from_dict(_odptairport_terminal_title)
@@ -744,7 +744,7 @@ class AirportTerminal:
 
         _ugregion = d.pop(&#34;ug:region&#34;, UNSET)
         ugregion: Union[Unset, AirportTerminalUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = AirportTerminalUgregion.from_dict(_ugregion)
@@ -1332,14 +1332,14 @@ class Bus:
 
         _odptdoor_status = d.pop(&#34;odpt:doorStatus&#34;, UNSET)
         odptdoor_status: Union[Unset, BusDoorStatus]
-        if isinstance(_odptdoor_status, Unset):
+        if isinstance(_odptdoor_status, Unset) or _odptdoor_status is None:
             odptdoor_status = UNSET
         else:
             odptdoor_status = BusDoorStatus(_odptdoor_status)
 
         _odptoccupancy_status = d.pop(&#34;odpt:occupancyStatus&#34;, UNSET)
         odptoccupancy_status: Union[Unset, OccupancyStatus]
-        if isinstance(_odptoccupancy_status, Unset):
+        if isinstance(_odptoccupancy_status, Unset) or _odptoccupancy_status is None:
             odptoccupancy_status = UNSET
         else:
             odptoccupancy_status = OccupancyStatus(_odptoccupancy_status)
@@ -2348,7 +2348,7 @@ class BusroutePattern:
 
         _ugregion = d.pop(&#34;ug:region&#34;, UNSET)
         ugregion: Union[Unset, BusroutePatternUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = BusroutePatternUgregion.from_dict(_ugregion)
@@ -3376,7 +3376,7 @@ class BusstopPole:
 
         _title = d.pop(&#34;title&#34;, UNSET)
         title: Union[Unset, MultilingualTitle]
-        if isinstance(_title, Unset):
+        if isinstance(_title, Unset) or _title is None:
             title = UNSET
         else:
             title = MultilingualTitle.from_dict(_title)
@@ -4330,7 +4330,7 @@ class Calendar:
 
         _odptcalendar_title = d.pop(&#34;odpt:calendarTitle&#34;, UNSET)
         odptcalendar_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptcalendar_title, Unset):
+        if isinstance(_odptcalendar_title, Unset) or _odptcalendar_title is None:
             odptcalendar_title = UNSET
         else:
             odptcalendar_title = MultilingualTitle.from_dict(_odptcalendar_title)
@@ -5315,14 +5315,14 @@ class FlightInformationArrival:
 
         _odptflight_information_summary = d.pop(&#34;odpt:flightInformationSummary&#34;, UNSET)
         odptflight_information_summary: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_summary, Unset):
+        if isinstance(_odptflight_information_summary, Unset) or _odptflight_information_summary is None:
             odptflight_information_summary = UNSET
         else:
             odptflight_information_summary = MultilingualTitle.from_dict(_odptflight_information_summary)
 
         _odptflight_information_text = d.pop(&#34;odpt:flightInformationText&#34;, UNSET)
         odptflight_information_text: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_text, Unset):
+        if isinstance(_odptflight_information_text, Unset) or _odptflight_information_text is None:
             odptflight_information_text = UNSET
         else:
             odptflight_information_text = MultilingualTitle.from_dict(_odptflight_information_text)
@@ -5782,14 +5782,14 @@ class FlightInformationDeparture:
 
         _odptflight_information_summary = d.pop(&#34;odpt:flightInformationSummary&#34;, UNSET)
         odptflight_information_summary: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_summary, Unset):
+        if isinstance(_odptflight_information_summary, Unset) or _odptflight_information_summary is None:
             odptflight_information_summary = UNSET
         else:
             odptflight_information_summary = MultilingualTitle.from_dict(_odptflight_information_summary)
 
         _odptflight_information_text = d.pop(&#34;odpt:flightInformationText&#34;, UNSET)
         odptflight_information_text: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_text, Unset):
+        if isinstance(_odptflight_information_text, Unset) or _odptflight_information_text is None:
             odptflight_information_text = UNSET
         else:
             odptflight_information_text = MultilingualTitle.from_dict(_odptflight_information_text)
@@ -6408,7 +6408,7 @@ class FlightScheduleObject:
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
@@ -6663,7 +6663,7 @@ class FlightStatus:
 
         _odptflight_status_title = d.pop(&#34;odpt:flightStatusTitle&#34;, UNSET)
         odptflight_status_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_status_title, Unset):
+        if isinstance(_odptflight_status_title, Unset) or _odptflight_status_title is None:
             odptflight_status_title = UNSET
         else:
             odptflight_status_title = MultilingualTitle.from_dict(_odptflight_status_title)
@@ -7167,7 +7167,7 @@ class Operator:
 
         _odptoperator_title = d.pop(&#34;odpt:operatorTitle&#34;, UNSET)
         odptoperator_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptoperator_title, Unset):
+        if isinstance(_odptoperator_title, Unset) or _odptoperator_title is None:
             odptoperator_title = UNSET
         else:
             odptoperator_title = MultilingualTitle.from_dict(_odptoperator_title)
@@ -8170,7 +8170,7 @@ class RailDirection:
 
         _odptrail_direction_title = d.pop(&#34;odpt:railDirectionTitle&#34;, UNSET)
         odptrail_direction_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrail_direction_title, Unset):
+        if isinstance(_odptrail_direction_title, Unset) or _odptrail_direction_title is None:
             odptrail_direction_title = UNSET
         else:
             odptrail_direction_title = MultilingualTitle.from_dict(_odptrail_direction_title)
@@ -8482,7 +8482,7 @@ class Railway:
 
         _odptrailway_title = d.pop(&#34;odpt:railwayTitle&#34;, UNSET)
         odptrailway_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrailway_title, Unset):
+        if isinstance(_odptrailway_title, Unset) or _odptrailway_title is None:
             odptrailway_title = UNSET
         else:
             odptrailway_title = MultilingualTitle.from_dict(_odptrailway_title)
@@ -8495,7 +8495,7 @@ class Railway:
 
         _ugregion = d.pop(&#34;ug:region&#34;, UNSET)
         ugregion: Union[Unset, RailwayUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = RailwayUgregion.from_dict(_ugregion)
@@ -9688,7 +9688,7 @@ class Station:
 
         _odptstation_title = d.pop(&#34;odpt:stationTitle&#34;, UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
@@ -9701,7 +9701,7 @@ class Station:
 
         _ugregion = d.pop(&#34;ug:region&#34;, UNSET)
         ugregion: Union[Unset, StationUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = StationUgregion.from_dict(_ugregion)
@@ -9934,7 +9934,7 @@ class StationOrder:
 
         _odptstation_title = d.pop(&#34;odpt:stationTitle&#34;, UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
@@ -10210,7 +10210,7 @@ class StationTimetable:
 
         _odptrailway_title = d.pop(&#34;odpt:railwayTitle&#34;, UNSET)
         odptrailway_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrailway_title, Unset):
+        if isinstance(_odptrailway_title, Unset) or _odptrailway_title is None:
             odptrailway_title = UNSET
         else:
             odptrailway_title = MultilingualTitle.from_dict(_odptrailway_title)
@@ -10219,7 +10219,7 @@ class StationTimetable:
 
         _odptstation_title = d.pop(&#34;odpt:stationTitle&#34;, UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
@@ -10230,7 +10230,7 @@ class StationTimetable:
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
@@ -10603,7 +10603,7 @@ class StationTimetableObject:
 
         _odptplatform_name = d.pop(&#34;odpt:platformName&#34;, UNSET)
         odptplatform_name: Union[Unset, MultilingualTitle]
-        if isinstance(_odptplatform_name, Unset):
+        if isinstance(_odptplatform_name, Unset) or _odptplatform_name is None:
             odptplatform_name = UNSET
         else:
             odptplatform_name = MultilingualTitle.from_dict(_odptplatform_name)
@@ -10612,7 +10612,7 @@ class StationTimetableObject:
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
@@ -11128,7 +11128,7 @@ class TrainInformation:
 
         _odpttrain_information_status = d.pop(&#34;odpt:trainInformationStatus&#34;, UNSET)
         odpttrain_information_status: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_status, Unset):
+        if isinstance(_odpttrain_information_status, Unset) or _odpttrain_information_status is None:
             odpttrain_information_status = UNSET
         else:
             odpttrain_information_status = MultilingualTitle.from_dict(_odpttrain_information_status)
@@ -11137,14 +11137,14 @@ class TrainInformation:
 
         _odpttrain_information_area = d.pop(&#34;odpt:trainInformationArea&#34;, UNSET)
         odpttrain_information_area: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_area, Unset):
+        if isinstance(_odpttrain_information_area, Unset) or _odpttrain_information_area is None:
             odpttrain_information_area = UNSET
         else:
             odpttrain_information_area = MultilingualTitle.from_dict(_odpttrain_information_area)
 
         _odpttrain_information_kind = d.pop(&#34;odpt:trainInformationKind&#34;, UNSET)
         odpttrain_information_kind: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_kind, Unset):
+        if isinstance(_odpttrain_information_kind, Unset) or _odpttrain_information_kind is None:
             odpttrain_information_kind = UNSET
         else:
             odpttrain_information_kind = MultilingualTitle.from_dict(_odpttrain_information_kind)
@@ -11155,14 +11155,14 @@ class TrainInformation:
 
         _odpttrain_information_range = d.pop(&#34;odpt:trainInformationRange&#34;, UNSET)
         odpttrain_information_range: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_range, Unset):
+        if isinstance(_odpttrain_information_range, Unset) or _odpttrain_information_range is None:
             odpttrain_information_range = UNSET
         else:
             odpttrain_information_range = MultilingualTitle.from_dict(_odpttrain_information_range)
 
         _odpttrain_information_cause = d.pop(&#34;odpt:trainInformationCause&#34;, UNSET)
         odpttrain_information_cause: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_cause, Unset):
+        if isinstance(_odpttrain_information_cause, Unset) or _odpttrain_information_cause is None:
             odpttrain_information_cause = UNSET
         else:
             odpttrain_information_cause = MultilingualTitle.from_dict(_odpttrain_information_cause)
@@ -11684,7 +11684,7 @@ class TrainTimetable:
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
@@ -11981,14 +11981,14 @@ class TrainTimetableObject:
 
         _odptplatform_name = d.pop(&#34;odpt:platformName&#34;, UNSET)
         odptplatform_name: Union[Unset, MultilingualTitle]
-        if isinstance(_odptplatform_name, Unset):
+        if isinstance(_odptplatform_name, Unset) or _odptplatform_name is None:
             odptplatform_name = UNSET
         else:
             odptplatform_name = MultilingualTitle.from_dict(_odptplatform_name)
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
@@ -12232,7 +12232,7 @@ class TrainType:
 
         _odpttrain_type_title = d.pop(&#34;odpt:trainTypeTitle&#34;, UNSET)
         odpttrain_type_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_type_title, Unset):
+        if isinstance(_odpttrain_type_title, Unset) or _odpttrain_type_title is None:
             odpttrain_type_title = UNSET
         else:
             odpttrain_type_title = MultilingualTitle.from_dict(_odpttrain_type_title)

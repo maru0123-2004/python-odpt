@@ -359,7 +359,7 @@ class TrainTimetable:
 
         _odptnote = d.pop(&#34;odpt:note&#34;, UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
