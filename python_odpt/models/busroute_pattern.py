@@ -170,7 +170,7 @@ class BusroutePattern:
 
         _ugregion = d.pop("ug:region", UNSET)
         ugregion: Union[Unset, BusroutePatternUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = BusroutePatternUgregion.from_dict(_ugregion)

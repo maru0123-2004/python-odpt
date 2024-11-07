@@ -91,14 +91,14 @@ class TrainTimetableObject:
 
         _odptplatform_name = d.pop("odpt:platformName", UNSET)
         odptplatform_name: Union[Unset, MultilingualTitle]
-        if isinstance(_odptplatform_name, Unset):
+        if isinstance(_odptplatform_name, Unset) or _odptplatform_name is None:
             odptplatform_name = UNSET
         else:
             odptplatform_name = MultilingualTitle.from_dict(_odptplatform_name)
 
         _odptnote = d.pop("odpt:note", UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)

@@ -121,7 +121,7 @@ class Airport:
 
         _odptairport_title = d.pop("odpt:airportTitle", UNSET)
         odptairport_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptairport_title, Unset):
+        if isinstance(_odptairport_title, Unset) or _odptairport_title is None:
             odptairport_title = UNSET
         else:
             odptairport_title = MultilingualTitle.from_dict(_odptairport_title)
@@ -134,7 +134,7 @@ class Airport:
 
         _ugregion = d.pop("ug:region", UNSET)
         ugregion: Union[Unset, AirportUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = AirportUgregion.from_dict(_ugregion)

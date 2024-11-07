@@ -154,7 +154,7 @@ class Railway:
 
         _odptrailway_title = d.pop("odpt:railwayTitle", UNSET)
         odptrailway_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrailway_title, Unset):
+        if isinstance(_odptrailway_title, Unset) or _odptrailway_title is None:
             odptrailway_title = UNSET
         else:
             odptrailway_title = MultilingualTitle.from_dict(_odptrailway_title)
@@ -167,7 +167,7 @@ class Railway:
 
         _ugregion = d.pop("ug:region", UNSET)
         ugregion: Union[Unset, RailwayUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = RailwayUgregion.from_dict(_ugregion)

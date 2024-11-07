@@ -60,7 +60,7 @@ class StationOrder:
 
         _odptstation_title = d.pop("odpt:stationTitle", UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
