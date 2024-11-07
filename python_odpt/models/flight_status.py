@@ -91,7 +91,7 @@ class FlightStatus:
 
         _odptflight_status_title = d.pop("odpt:flightStatusTitle", UNSET)
         odptflight_status_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_status_title, Unset):
+        if isinstance(_odptflight_status_title, Unset) or _odptflight_status_title is None:
             odptflight_status_title = UNSET
         else:
             odptflight_status_title = MultilingualTitle.from_dict(_odptflight_status_title)

@@ -91,7 +91,7 @@ class RailDirection:
 
         _odptrail_direction_title = d.pop("odpt:railDirectionTitle", UNSET)
         odptrail_direction_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrail_direction_title, Unset):
+        if isinstance(_odptrail_direction_title, Unset) or _odptrail_direction_title is None:
             odptrail_direction_title = UNSET
         else:
             odptrail_direction_title = MultilingualTitle.from_dict(_odptrail_direction_title)

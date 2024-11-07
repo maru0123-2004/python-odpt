@@ -193,14 +193,14 @@ class FlightInformationDeparture:
 
         _odptflight_information_summary = d.pop("odpt:flightInformationSummary", UNSET)
         odptflight_information_summary: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_summary, Unset):
+        if isinstance(_odptflight_information_summary, Unset) or _odptflight_information_summary is None:
             odptflight_information_summary = UNSET
         else:
             odptflight_information_summary = MultilingualTitle.from_dict(_odptflight_information_summary)
 
         _odptflight_information_text = d.pop("odpt:flightInformationText", UNSET)
         odptflight_information_text: Union[Unset, MultilingualTitle]
-        if isinstance(_odptflight_information_text, Unset):
+        if isinstance(_odptflight_information_text, Unset) or _odptflight_information_text is None:
             odptflight_information_text = UNSET
         else:
             odptflight_information_text = MultilingualTitle.from_dict(_odptflight_information_text)

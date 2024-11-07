@@ -91,7 +91,7 @@ class Calendar:
 
         _odptcalendar_title = d.pop("odpt:calendarTitle", UNSET)
         odptcalendar_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptcalendar_title, Unset):
+        if isinstance(_odptcalendar_title, Unset) or _odptcalendar_title is None:
             odptcalendar_title = UNSET
         else:
             odptcalendar_title = MultilingualTitle.from_dict(_odptcalendar_title)

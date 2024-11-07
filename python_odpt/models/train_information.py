@@ -183,7 +183,7 @@ class TrainInformation:
 
         _odpttrain_information_status = d.pop("odpt:trainInformationStatus", UNSET)
         odpttrain_information_status: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_status, Unset):
+        if isinstance(_odpttrain_information_status, Unset) or _odpttrain_information_status is None:
             odpttrain_information_status = UNSET
         else:
             odpttrain_information_status = MultilingualTitle.from_dict(_odpttrain_information_status)
@@ -192,14 +192,14 @@ class TrainInformation:
 
         _odpttrain_information_area = d.pop("odpt:trainInformationArea", UNSET)
         odpttrain_information_area: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_area, Unset):
+        if isinstance(_odpttrain_information_area, Unset) or _odpttrain_information_area is None:
             odpttrain_information_area = UNSET
         else:
             odpttrain_information_area = MultilingualTitle.from_dict(_odpttrain_information_area)
 
         _odpttrain_information_kind = d.pop("odpt:trainInformationKind", UNSET)
         odpttrain_information_kind: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_kind, Unset):
+        if isinstance(_odpttrain_information_kind, Unset) or _odpttrain_information_kind is None:
             odpttrain_information_kind = UNSET
         else:
             odpttrain_information_kind = MultilingualTitle.from_dict(_odpttrain_information_kind)
@@ -210,14 +210,14 @@ class TrainInformation:
 
         _odpttrain_information_range = d.pop("odpt:trainInformationRange", UNSET)
         odpttrain_information_range: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_range, Unset):
+        if isinstance(_odpttrain_information_range, Unset) or _odpttrain_information_range is None:
             odpttrain_information_range = UNSET
         else:
             odpttrain_information_range = MultilingualTitle.from_dict(_odpttrain_information_range)
 
         _odpttrain_information_cause = d.pop("odpt:trainInformationCause", UNSET)
         odpttrain_information_cause: Union[Unset, MultilingualTitle]
-        if isinstance(_odpttrain_information_cause, Unset):
+        if isinstance(_odpttrain_information_cause, Unset) or _odpttrain_information_cause is None:
             odpttrain_information_cause = UNSET
         else:
             odpttrain_information_cause = MultilingualTitle.from_dict(_odpttrain_information_cause)

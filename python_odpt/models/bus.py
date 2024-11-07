@@ -213,14 +213,14 @@ class Bus:
 
         _odptdoor_status = d.pop("odpt:doorStatus", UNSET)
         odptdoor_status: Union[Unset, BusDoorStatus]
-        if isinstance(_odptdoor_status, Unset):
+        if isinstance(_odptdoor_status, Unset) or _odptdoor_status is None:
             odptdoor_status = UNSET
         else:
             odptdoor_status = BusDoorStatus(_odptdoor_status)
 
         _odptoccupancy_status = d.pop("odpt:occupancyStatus", UNSET)
         odptoccupancy_status: Union[Unset, OccupancyStatus]
-        if isinstance(_odptoccupancy_status, Unset):
+        if isinstance(_odptoccupancy_status, Unset) or _odptoccupancy_status is None:
             odptoccupancy_status = UNSET
         else:
             odptoccupancy_status = OccupancyStatus(_odptoccupancy_status)

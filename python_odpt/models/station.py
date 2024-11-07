@@ -175,7 +175,7 @@ class Station:
 
         _odptstation_title = d.pop("odpt:stationTitle", UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
@@ -188,7 +188,7 @@ class Station:
 
         _ugregion = d.pop("ug:region", UNSET)
         ugregion: Union[Unset, StationUgregion]
-        if isinstance(_ugregion, Unset):
+        if isinstance(_ugregion, Unset) or _ugregion is None:
             ugregion = UNSET
         else:
             ugregion = StationUgregion.from_dict(_ugregion)

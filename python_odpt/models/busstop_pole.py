@@ -153,7 +153,7 @@ class BusstopPole:
 
         _title = d.pop("title", UNSET)
         title: Union[Unset, MultilingualTitle]
-        if isinstance(_title, Unset):
+        if isinstance(_title, Unset) or _title is None:
             title = UNSET
         else:
             title = MultilingualTitle.from_dict(_title)

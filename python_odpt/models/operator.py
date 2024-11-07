@@ -91,7 +91,7 @@ class Operator:
 
         _odptoperator_title = d.pop("odpt:operatorTitle", UNSET)
         odptoperator_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptoperator_title, Unset):
+        if isinstance(_odptoperator_title, Unset) or _odptoperator_title is None:
             odptoperator_title = UNSET
         else:
             odptoperator_title = MultilingualTitle.from_dict(_odptoperator_title)

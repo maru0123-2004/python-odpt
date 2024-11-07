@@ -164,7 +164,7 @@ class StationTimetable:
 
         _odptrailway_title = d.pop("odpt:railwayTitle", UNSET)
         odptrailway_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptrailway_title, Unset):
+        if isinstance(_odptrailway_title, Unset) or _odptrailway_title is None:
             odptrailway_title = UNSET
         else:
             odptrailway_title = MultilingualTitle.from_dict(_odptrailway_title)
@@ -173,7 +173,7 @@ class StationTimetable:
 
         _odptstation_title = d.pop("odpt:stationTitle", UNSET)
         odptstation_title: Union[Unset, MultilingualTitle]
-        if isinstance(_odptstation_title, Unset):
+        if isinstance(_odptstation_title, Unset) or _odptstation_title is None:
             odptstation_title = UNSET
         else:
             odptstation_title = MultilingualTitle.from_dict(_odptstation_title)
@@ -184,7 +184,7 @@ class StationTimetable:
 
         _odptnote = d.pop("odpt:note", UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)

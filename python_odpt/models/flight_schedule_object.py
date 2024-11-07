@@ -124,7 +124,7 @@ class FlightScheduleObject:
 
         _odptnote = d.pop("odpt:note", UNSET)
         odptnote: Union[Unset, MultilingualTitle]
-        if isinstance(_odptnote, Unset):
+        if isinstance(_odptnote, Unset) or _odptnote is None:
             odptnote = UNSET
         else:
             odptnote = MultilingualTitle.from_dict(_odptnote)
