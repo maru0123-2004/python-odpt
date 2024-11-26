@@ -64,9 +64,9 @@ class MultilingualTitle:
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
         d = src_dict.copy()
-        ja = d.pop("ja")
+        ja = d.pop("ja", UNSET)
 
-        en = d.pop("en")
+        en = d.pop("en", UNSET)
 
         ko = d.pop("ko", UNSET)
 

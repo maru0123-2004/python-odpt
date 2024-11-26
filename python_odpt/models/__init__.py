@@ -52,7 +52,6 @@ from .railway_fare import RailwayFare
 from .railway_fare_type import RailwayFareType
 from .railway_type import RailwayType
 from .railway_ugregion import RailwayUgregion
-from .retrieve_response import RetrieveResponse
 from .station import Station
 from .station_order import StationOrder
 from .station_timetable import StationTimetable

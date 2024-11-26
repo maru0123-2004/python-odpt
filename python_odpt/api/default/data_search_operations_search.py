@@ -46,43 +46,43 @@ def _parse_response(
         response_200 = []
         _response_200 = response.json()
         for response_200_item_data in _response_200:
-            if response_200_item_data["type"] == DumpRDFType.ODPTCALENDAR:
+            if response_200_item_data["@type"] == DumpRDFType.ODPTCALENDAR:
                 response_200_item = Calendar.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTOPERATOR:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTOPERATOR:
                 response_200_item = Operator.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTSTATION:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTSTATION:
                 response_200_item = Station.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTSTATIONTIMETABLE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTSTATIONTIMETABLE:
                 response_200_item = StationTimetable.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTTRAINTIMETABLE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTTRAINTIMETABLE:
                 response_200_item = TrainTimetable.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTTRAINTYPE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTTRAINTYPE:
                 response_200_item = TrainType.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTRAILDIRECTION:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTRAILDIRECTION:
                 response_200_item = RailDirection.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTRAILWAY:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTRAILWAY:
                 response_200_item = Railway.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTRAILWAYFARE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTRAILWAYFARE:
                 response_200_item = RailwayFare.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTPASSENGERSURVEY:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTPASSENGERSURVEY:
                 response_200_item = PassengerSurvey.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTBUSTIMETABLE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTBUSTIMETABLE:
                 response_200_item = BusTimetable.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTBUSROUTEPATTERN:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTBUSROUTEPATTERN:
                 response_200_item = BusroutePattern.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTBUSROUTEPATTERNFARE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTBUSROUTEPATTERNFARE:
                 response_200_item = BusroutePatternFare.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTBUSSTOPPOLE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTBUSSTOPPOLE:
                 response_200_item = BusstopPole.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTBUSSTOPPOLETIMETABLE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTBUSSTOPPOLETIMETABLE:
                 response_200_item = BusstopPoleTimetable.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTAIRPORT:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTAIRPORT:
                 response_200_item = Airport.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTAIRPORTTERMINAL:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTAIRPORTTERMINAL:
                 response_200_item = AirportTerminal.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTFLIGHTSCHEDULE:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTFLIGHTSCHEDULE:
                 response_200_item = FlightSchedule.from_dict(response_200_item_data)
-            elif response_200_item_data["type"] == DumpRDFType.ODPTFLIGHTSTATUS:
+            elif response_200_item_data["@type"] == DumpRDFType.ODPTFLIGHTSTATUS:
                 response_200_item = FlightStatus.from_dict(response_200_item_data)
             
             response_200.append(response_200_item)
