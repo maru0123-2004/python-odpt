@@ -25,9 +25,7 @@ from .busstop_pole_timetable_type import BusstopPoleTimetableType
 from .busstop_pole_type import BusstopPoleType
 from .calendar import Calendar
 from .calendar_type import CalendarType
-from .data_search_response import DataSearchResponse
 from .dump_rdf_type import DumpRDFType
-from .dump_response import DumpResponse
 from .flight_information_arrival import FlightInformationArrival
 from .flight_information_arrival_type import FlightInformationArrivalType
 from .flight_information_departure import FlightInformationDeparture
@@ -54,7 +52,6 @@ from .railway_fare import RailwayFare
 from .railway_fare_type import RailwayFareType
 from .railway_type import RailwayType
 from .railway_ugregion import RailwayUgregion
-from .retrieve_response import RetrieveResponse
 from .station import Station
 from .station_order import StationOrder
 from .station_timetable import StationTimetable
