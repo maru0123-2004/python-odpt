@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<meta name="generator" content="pdoc3 0.11.1">
+<meta name="generator" content="pdoc3 0.11.3">
 <title>python_odpt.models API documentation</title>
 <meta name="description" content="Contains all the data models used in inputs/outputs">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
-<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin:1em 0}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
 <style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
@@ -130,15 +130,7 @@ hljs.highlightAll();
 <dd>
 <div class="desc"></div>
 </dd>
-<dt><code class="name"><a title="python_odpt.models.data_search_response" href="data_search_response.html">python_odpt.models.data_search_response</a></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
 <dt><code class="name"><a title="python_odpt.models.dump_rdf_type" href="dump_rdf_type.html">python_odpt.models.dump_rdf_type</a></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt><code class="name"><a title="python_odpt.models.dump_response" href="dump_response.html">python_odpt.models.dump_response</a></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -246,10 +238,6 @@ hljs.highlightAll();
 <dd>
 <div class="desc"></div>
 </dd>
-<dt><code class="name"><a title="python_odpt.models.retrieve_response" href="retrieve_response.html">python_odpt.models.retrieve_response</a></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
 <dt><code class="name"><a title="python_odpt.models.station" href="station.html">python_odpt.models.station</a></code></dt>
 <dd>
 <div class="desc"></div>
@@ -317,7 +305,7 @@ hljs.highlightAll();
 <dl>
 <dt id="python_odpt.models.Airport"><code class="flex name class">
 <span>class <span class="ident">Airport</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.airport_type.AirportType" href="airport_type.html#python_odpt.models.airport_type.AirportType">AirportType</a>, owlsame_as: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptairport_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptairport_terminal: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, ugregion: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.AirportUgregion" href="#python_odpt.models.AirportUgregion">AirportUgregion</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.airport_type.AirportType" href="airport_type.html#python_odpt.models.airport_type.AirportType">AirportType</a>,<br>owlsame_as: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptairport_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptairport_terminal: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>geolong: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolat: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>ugregion: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.AirportUgregion" href="#python_odpt.models.AirportUgregion">AirportUgregion</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>空港の情報</p>
@@ -593,7 +581,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.AirportTerminal"><code class="flex name class">
 <span>class <span class="ident">AirportTerminal</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.airport_terminal_type.AirportTerminalType" href="airport_terminal_type.html#python_odpt.models.airport_terminal_type.AirportTerminalType">AirportTerminalType</a>, owlsame_as: str, odptairport: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptairport_terminal_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, ugregion: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.AirportTerminalUgregion" href="#python_odpt.models.AirportTerminalUgregion">AirportTerminalUgregion</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.airport_terminal_type.AirportTerminalType" href="airport_terminal_type.html#python_odpt.models.airport_terminal_type.AirportTerminalType">AirportTerminalType</a>,<br>owlsame_as: str,<br>odptairport: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptairport_terminal_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>geolong: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolat: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>ugregion: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.AirportTerminalUgregion" href="#python_odpt.models.AirportTerminalUgregion">AirportTerminalUgregion</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>空港のターミナルの情報</p>
@@ -1092,7 +1080,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.Bus"><code class="flex name class">
 <span>class <span class="ident">Bus</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.bus_type.BusType" href="bus_type.html#python_odpt.models.bus_type.BusType">BusType</a>, owlsame_as: str, odptbus_number: str, dcdate: str, dctvalid: str, odptfrequency: int, odptbusroute_pattern: str, odptoperator: str, odptbus_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptstarting_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptterminal_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptfrom_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptfrom_busstop_pole_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptto_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptprogress: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptspeed: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptazimuth: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptdoor_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a>] = &lt;python_odpt.types.Unset object&gt;, odptoccupancy_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a>] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.bus_type.BusType" href="bus_type.html#python_odpt.models.bus_type.BusType">BusType</a>,<br>owlsame_as: str,<br>odptbus_number: str,<br>dcdate: str,<br>dctvalid: str,<br>odptfrequency: int,<br>odptbusroute_pattern: str,<br>odptoperator: str,<br>odptbus_timetable: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptstarting_busstop_pole: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptterminal_busstop_pole: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptfrom_busstop_pole: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptfrom_busstop_pole_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptto_busstop_pole: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptprogress: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolong: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolat: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>odptspeed: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>odptazimuth: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>odptdoor_status: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a> = &lt;python_odpt.types.Unset object&gt;,<br>odptoccupancy_status: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a> = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バスの運行情報
@@ -1428,11 +1416,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.geolat"><code class="name">var <span class="ident">geolat</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dt id="python_odpt.models.Bus.geolat"><code class="name">var <span class="ident">geolat</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.geolong"><code class="name">var <span class="ident">geolong</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dt id="python_odpt.models.Bus.geolong"><code class="name">var <span class="ident">geolong</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1440,7 +1428,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptazimuth"><code class="name">var <span class="ident">odptazimuth</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dt id="python_odpt.models.Bus.odptazimuth"><code class="name">var <span class="ident">odptazimuth</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1448,7 +1436,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptbus_timetable"><code class="name">var <span class="ident">odptbus_timetable</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptbus_timetable"><code class="name">var <span class="ident">odptbus_timetable</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1456,7 +1444,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptdoor_status"><code class="name">var <span class="ident">odptdoor_status</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a>]</code></dt>
+<dt id="python_odpt.models.Bus.odptdoor_status"><code class="name">var <span class="ident">odptdoor_status</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | <a title="python_odpt.models.bus_door_status.BusDoorStatus" href="bus_door_status.html#python_odpt.models.bus_door_status.BusDoorStatus">BusDoorStatus</a></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1464,15 +1452,15 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptfrom_busstop_pole"><code class="name">var <span class="ident">odptfrom_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptfrom_busstop_pole"><code class="name">var <span class="ident">odptfrom_busstop_pole</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptfrom_busstop_pole_time"><code class="name">var <span class="ident">odptfrom_busstop_pole_time</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptfrom_busstop_pole_time"><code class="name">var <span class="ident">odptfrom_busstop_pole_time</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptoccupancy_status"><code class="name">var <span class="ident">odptoccupancy_status</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a>]</code></dt>
+<dt id="python_odpt.models.Bus.odptoccupancy_status"><code class="name">var <span class="ident">odptoccupancy_status</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | <a title="python_odpt.models.occupancy_status.OccupancyStatus" href="occupancy_status.html#python_odpt.models.occupancy_status.OccupancyStatus">OccupancyStatus</a></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1480,23 +1468,23 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptprogress"><code class="name">var <span class="ident">odptprogress</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dt id="python_odpt.models.Bus.odptprogress"><code class="name">var <span class="ident">odptprogress</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptspeed"><code class="name">var <span class="ident">odptspeed</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float]</code></dt>
+<dt id="python_odpt.models.Bus.odptspeed"><code class="name">var <span class="ident">odptspeed</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptstarting_busstop_pole"><code class="name">var <span class="ident">odptstarting_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptstarting_busstop_pole"><code class="name">var <span class="ident">odptstarting_busstop_pole</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptterminal_busstop_pole"><code class="name">var <span class="ident">odptterminal_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptterminal_busstop_pole"><code class="name">var <span class="ident">odptterminal_busstop_pole</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.Bus.odptto_busstop_pole"><code class="name">var <span class="ident">odptto_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.Bus.odptto_busstop_pole"><code class="name">var <span class="ident">odptto_busstop_pole</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -1560,7 +1548,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusTimetable"><code class="flex name class">
 <span>class <span class="ident">BusTimetable</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.bus_timetable_type.BusTimetableType" href="bus_timetable_type.html#python_odpt.models.bus_timetable_type.BusTimetableType">BusTimetableType</a>, owlsame_as: str, odptoperator: str, odptbusroute_pattern: str, odptcalendar: str, odptbus_timetable_object: List[ForwardRef('<a title="python_odpt.models.BusTimetableObject" href="#python_odpt.models.BusTimetableObject">BusTimetableObject</a>')], dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptkana: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.bus_timetable_type.BusTimetableType" href="bus_timetable_type.html#python_odpt.models.bus_timetable_type.BusTimetableType">BusTimetableType</a>,<br>owlsame_as: str,<br>odptoperator: str,<br>odptbusroute_pattern: str,<br>odptcalendar: str,<br>odptbus_timetable_object: List[ForwardRef('<a title="python_odpt.models.BusTimetableObject" href="#python_odpt.models.BusTimetableObject">BusTimetableObject</a>')],<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptkana: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バスの便の時刻表</p>
@@ -1858,7 +1846,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusTimetableObject"><code class="flex name class">
 <span>class <span class="ident">BusTimetableObject</span></span>
-<span>(</span><span>odptindex: int, odptbusstop_pole: str, odptarrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdestination_sign: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptis_non_step_bus: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptis_midnight: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptcan_get_on: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptcan_get_off: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptindex: int,<br>odptbusstop_pole: str,<br>odptarrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_sign: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptis_non_step_bus: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptis_midnight: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptcan_get_on: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptcan_get_off: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バス時刻表時分情報</p>
@@ -2049,7 +2037,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptarrival_time"><code class="name">var <span class="ident">odptarrival_time</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptarrival_time"><code class="name">var <span class="ident">odptarrival_time</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2057,19 +2045,19 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptcan_get_off"><code class="name">var <span class="ident">odptcan_get_off</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptcan_get_off"><code class="name">var <span class="ident">odptcan_get_off</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptcan_get_on"><code class="name">var <span class="ident">odptcan_get_on</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptcan_get_on"><code class="name">var <span class="ident">odptcan_get_on</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptdeparture_time"><code class="name">var <span class="ident">odptdeparture_time</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptdeparture_time"><code class="name">var <span class="ident">odptdeparture_time</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptdestination_sign"><code class="name">var <span class="ident">odptdestination_sign</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptdestination_sign"><code class="name">var <span class="ident">odptdestination_sign</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2077,15 +2065,15 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptis_midnight"><code class="name">var <span class="ident">odptis_midnight</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptis_midnight"><code class="name">var <span class="ident">odptis_midnight</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptis_non_step_bus"><code class="name">var <span class="ident">odptis_non_step_bus</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptis_non_step_bus"><code class="name">var <span class="ident">odptis_non_step_bus</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusTimetableObject.odptnote"><code class="name">var <span class="ident">odptnote</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusTimetableObject.odptnote"><code class="name">var <span class="ident">odptnote</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2160,7 +2148,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusroutePattern"><code class="flex name class">
 <span>class <span class="ident">BusroutePattern</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.busroute_pattern_type.BusroutePatternType" href="busroute_pattern_type.html#python_odpt.models.busroute_pattern_type.BusroutePatternType">BusroutePatternType</a>, owlsame_as: str, dcdate: str, dctitle: str, odptoperator: str, odptbusstop_pole_order: List[ForwardRef('<a title="python_odpt.models.BussstopPoleOrder" href="#python_odpt.models.BussstopPoleOrder">BussstopPoleOrder</a>')], dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptkana: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbusroute: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptpattern: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdirection: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, ugregion: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.BusroutePatternUgregion" href="#python_odpt.models.BusroutePatternUgregion">BusroutePatternUgregion</a>')] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbus_location_url: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.busroute_pattern_type.BusroutePatternType" href="busroute_pattern_type.html#python_odpt.models.busroute_pattern_type.BusroutePatternType">BusroutePatternType</a>,<br>owlsame_as: str,<br>dcdate: str,<br>dctitle: str,<br>odptoperator: str,<br>odptbusstop_pole_order: List[ForwardRef('<a title="python_odpt.models.BussstopPoleOrder" href="#python_odpt.models.BussstopPoleOrder">BussstopPoleOrder</a>')],<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptkana: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbusroute: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptpattern: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdirection: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>ugregion: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.BusroutePatternUgregion" href="#python_odpt.models.BusroutePatternUgregion">BusroutePatternUgregion</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbus_location_url: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バス路線の系統情報
@@ -2499,7 +2487,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusroutePatternFare"><code class="flex name class">
 <span>class <span class="ident">BusroutePatternFare</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType" href="busroute_pattern_fare_type.html#python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType">BusroutePatternFareType</a>, owlsame_as: str, dcdate: str, odptoperator: str, odptfrom_busroute_pattern: str, odptfrom_busstop_pole_order: int, odptfrom_busstop_pole: str, odptto_busroute_pattern: str, odptto_busstop_pole_order: int, odptto_busstop_pole: str, odptticket_fare: int, dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptchild_ticket_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptchild_ic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType" href="busroute_pattern_fare_type.html#python_odpt.models.busroute_pattern_fare_type.BusroutePatternFareType">BusroutePatternFareType</a>,<br>owlsame_as: str,<br>dcdate: str,<br>odptoperator: str,<br>odptfrom_busroute_pattern: str,<br>odptfrom_busstop_pole_order: int,<br>odptfrom_busstop_pole: str,<br>odptto_busroute_pattern: str,<br>odptto_busstop_pole_order: int,<br>odptto_busstop_pole: str,<br>odptticket_fare: int,<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptchild_ticket_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptic_card_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptchild_ic_card_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>乗車バス停(標柱)、降車バス停(標柱)についての運賃情報</p>
@@ -2779,11 +2767,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusroutePatternFare.dctissued"><code class="name">var <span class="ident">dctissued</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusroutePatternFare.dctissued"><code class="name">var <span class="ident">dctissued</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusroutePatternFare.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusroutePatternFare.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2791,11 +2779,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusroutePatternFare.odptchild_ic_card_fare"><code class="name">var <span class="ident">odptchild_ic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.BusroutePatternFare.odptchild_ic_card_fare"><code class="name">var <span class="ident">odptchild_ic_card_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusroutePatternFare.odptchild_ticket_fare"><code class="name">var <span class="ident">odptchild_ticket_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.BusroutePatternFare.odptchild_ticket_fare"><code class="name">var <span class="ident">odptchild_ticket_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2811,7 +2799,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusroutePatternFare.odptic_card_fare"><code class="name">var <span class="ident">odptic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.BusroutePatternFare.odptic_card_fare"><code class="name">var <span class="ident">odptic_card_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -2998,7 +2986,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BussstopPoleOrder"><code class="flex name class">
 <span>class <span class="ident">BussstopPoleOrder</span></span>
-<span>(</span><span>odptbusstop_pole: str, odptindex: int, odptopening_doors_to_get_on: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]] = &lt;python_odpt.types.Unset object&gt;, odptopening_doors_to_get_off: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptbusstop_pole: str,<br>odptindex: int,<br>odptopening_doors_to_get_on: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>] = &lt;python_odpt.types.Unset object&gt;,<br>odptopening_doors_to_get_off: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>] = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>停留所(標柱)の順序</p>
@@ -3166,15 +3154,15 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BussstopPoleOrder.odptnote"><code class="name">var <span class="ident">odptnote</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BussstopPoleOrder.odptnote"><code class="name">var <span class="ident">odptnote</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BussstopPoleOrder.odptopening_doors_to_get_off"><code class="name">var <span class="ident">odptopening_doors_to_get_off</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]]</code></dt>
+<dt id="python_odpt.models.BussstopPoleOrder.odptopening_doors_to_get_off"><code class="name">var <span class="ident">odptopening_doors_to_get_off</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BussstopPoleOrder.odptopening_doors_to_get_on"><code class="name">var <span class="ident">odptopening_doors_to_get_on</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]]</code></dt>
+<dt id="python_odpt.models.BussstopPoleOrder.odptopening_doors_to_get_on"><code class="name">var <span class="ident">odptopening_doors_to_get_on</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[<a title="python_odpt.models.opening_door.OpeningDoor" href="opening_door.html#python_odpt.models.opening_door.OpeningDoor">OpeningDoor</a>]</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -3191,7 +3179,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusstopPole"><code class="flex name class">
 <span>class <span class="ident">BusstopPole</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.busstop_pole_type.BusstopPoleType" href="busstop_pole_type.html#python_odpt.models.busstop_pole_type.BusstopPoleType">BusstopPoleType</a>, owlsame_as: str, dcdate: str, dctitle: str, odptoperator: List[str], dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptkana: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, odptbusroute_pattern: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptbusstop_pole_number: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptplatform_number: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbusstop_pole_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.busstop_pole_type.BusstopPoleType" href="busstop_pole_type.html#python_odpt.models.busstop_pole_type.BusstopPoleType">BusstopPoleType</a>,<br>owlsame_as: str,<br>dcdate: str,<br>dctitle: str,<br>odptoperator: List[str],<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptkana: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>geolong: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolat: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>odptbusroute_pattern: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptbusstop_pole_number: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptplatform_number: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbusstop_pole_timetable: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バス停情報 odpt:BusstopPoleは、バス停(標柱)の情報</p>
@@ -3535,7 +3523,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusstopPoleTimetable"><code class="flex name class">
 <span>class <span class="ident">BusstopPoleTimetable</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.busstop_pole_timetable_type.BusstopPoleTimetableType" href="busstop_pole_timetable_type.html#python_odpt.models.busstop_pole_timetable_type.BusstopPoleTimetableType">BusstopPoleTimetableType</a>, owlsame_as: str, dcdate: str, odptbusstop_pole: str, odptbus_direction: Union[List[str], str], odptbusroute: Union[List[str], str], odptoperator: Union[List[str], str], odptcalendar: str, dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbusstop_pole_timetable_object: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[ForwardRef('<a title="python_odpt.models.BusstopPoleTimetableObject" href="#python_odpt.models.BusstopPoleTimetableObject">BusstopPoleTimetableObject</a>')]] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.busstop_pole_timetable_type.BusstopPoleTimetableType" href="busstop_pole_timetable_type.html#python_odpt.models.busstop_pole_timetable_type.BusstopPoleTimetableType">BusstopPoleTimetableType</a>,<br>owlsame_as: str,<br>dcdate: str,<br>odptbusstop_pole: str,<br>odptbus_direction: List[str] | str,<br>odptbusroute: List[str] | str,<br>odptoperator: List[str] | str,<br>odptcalendar: str,<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbusstop_pole_timetable_object: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[ForwardRef('<a title="python_odpt.models.BusstopPoleTimetableObject" href="#python_odpt.models.BusstopPoleTimetableObject">BusstopPoleTimetableObject</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バス停(標柱)時刻表 odpt:busstopPole で示されたバス停(標柱)の時刻表</p>
@@ -3906,7 +3894,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.BusstopPoleTimetableObject"><code class="flex name class">
 <span>class <span class="ident">BusstopPoleTimetableObject</span></span>
-<span>(</span><span>odptdeparture_time: str, odptarrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdestination_busstop_pole: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdestination_sign: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbusroute_pattern: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbusroute_pattern_order: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptis_non_step_bus: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptis_midnight: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptcan_get_on: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptcan_get_off: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptdeparture_time: str,<br>odptarrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_busstop_pole: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_sign: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbusroute_pattern: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbusroute_pattern_order: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptis_non_step_bus: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptis_midnight: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptcan_get_on: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptcan_get_off: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>バス停(標柱)時刻表の時分情報</p>
@@ -4111,23 +4099,23 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptarrival_time"><code class="name">var <span class="ident">odptarrival_time</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptarrival_time"><code class="name">var <span class="ident">odptarrival_time</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptbusroute_pattern"><code class="name">var <span class="ident">odptbusroute_pattern</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptbusroute_pattern"><code class="name">var <span class="ident">odptbusroute_pattern</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptbusroute_pattern_order"><code class="name">var <span class="ident">odptbusroute_pattern_order</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptbusroute_pattern_order"><code class="name">var <span class="ident">odptbusroute_pattern_order</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptcan_get_off"><code class="name">var <span class="ident">odptcan_get_off</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptcan_get_off"><code class="name">var <span class="ident">odptcan_get_off</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptcan_get_on"><code class="name">var <span class="ident">odptcan_get_on</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptcan_get_on"><code class="name">var <span class="ident">odptcan_get_on</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -4135,23 +4123,23 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptdestination_busstop_pole"><code class="name">var <span class="ident">odptdestination_busstop_pole</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptdestination_busstop_pole"><code class="name">var <span class="ident">odptdestination_busstop_pole</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptdestination_sign"><code class="name">var <span class="ident">odptdestination_sign</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptdestination_sign"><code class="name">var <span class="ident">odptdestination_sign</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptis_midnight"><code class="name">var <span class="ident">odptis_midnight</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptis_midnight"><code class="name">var <span class="ident">odptis_midnight</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptis_non_step_bus"><code class="name">var <span class="ident">odptis_non_step_bus</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptis_non_step_bus"><code class="name">var <span class="ident">odptis_non_step_bus</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.BusstopPoleTimetableObject.odptnote"><code class="name">var <span class="ident">odptnote</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.BusstopPoleTimetableObject.odptnote"><code class="name">var <span class="ident">odptnote</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -4226,7 +4214,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.Calendar"><code class="flex name class">
 <span>class <span class="ident">Calendar</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.calendar_type.CalendarType" href="calendar_type.html#python_odpt.models.calendar_type.CalendarType">CalendarType</a>, owlsame_as: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptcalendar_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.calendar_type.CalendarType" href="calendar_type.html#python_odpt.models.calendar_type.CalendarType">CalendarType</a>,<br>owlsame_as: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptcalendar_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>曜日・日付区分を扱うクラス</p>
@@ -4459,341 +4447,6 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 </dl>
 </dd>
-<dt id="python_odpt.models.DataSearchResponse"><code class="flex name class">
-<span>class <span class="ident">DataSearchResponse</span></span>
-<span>(</span><span>context: str, id: str, type: str, dcdate: str, dctvalid: str, odptfrequency: int, odptrailway: str, owlsame_as: str, odpttrain_number: str, odpttrain_type: str, odptorigin_station: List[str], odptdestination_station: List[str], odptfrom_station: str, odptto_station: str, odptrail_direction: str, odptoperator: str, odptdelay: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>データ検索APIのレスポンス</p>
-<h2 id="attributes">Attributes</h2>
-<dl>
-<dt><strong><code>context</code></strong> :&ensp;<code>str</code></dt>
-<dd>JSON-LD仕様に基づく @context のURL Example: <a href="http://vocab.odpt.org/context_odpt_Train.jsonld.">http://vocab.odpt.org/context_odpt_Train.jsonld.</a></dd>
-<dt><strong><code>id</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子</dd>
-<dt><strong><code>type</code></strong> :&ensp;<code>str</code></dt>
-<dd>クラス名 Example: odpt:Train.</dd>
-<dt><strong><code>dcdate</code></strong> :&ensp;<code>str</code></dt>
-<dd>ISO8601 日付時刻形式</dd>
-<dt><strong><code>dctvalid</code></strong> :&ensp;<code>str</code></dt>
-<dd>ISO8601 日付時刻形式</dd>
-<dt><strong><code>odptfrequency</code></strong> :&ensp;<code>int</code></dt>
-<dd>更新頻度(秒)、指定された秒数以降にリクエストを行うことで、最新値が取得される。 Example: 30.</dd>
-<dt><strong><code>odptrailway</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>owlsame_as</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odpttrain_number</code></strong> :&ensp;<code>str</code></dt>
-<dd>列車番号 Example: B1045S.</dd>
-<dt><strong><code>odpttrain_type</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptorigin_station</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>列車の始発駅のIDのリスト Example: ['odpt.Station:TokyoMetro.Yurakucho.ShinKiba'].</dd>
-<dt><strong><code>odptdestination_station</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>列車の終着駅のIDのリスト Example: ['odpt.Station:TokyoMetro.Yurakucho.Wakoshi'].</dd>
-<dt><strong><code>odptfrom_station</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptto_station</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptrail_direction</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptoperator</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptdelay</code></strong> :&ensp;<code>Union[Unset, int]</code></dt>
-<dd>遅延時間(秒)</dd>
-</dl>
-<p>Method generated by attrs for class DataSearchResponse.</p></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@_attrs_define
-class DataSearchResponse:
-    &#34;&#34;&#34;データ検索APIのレスポンス
-
-    Attributes:
-        context (str): JSON-LD仕様に基づく @context のURL Example: http://vocab.odpt.org/context_odpt_Train.jsonld.
-        id (str): 固有識別子
-        type (str): クラス名 Example: odpt:Train.
-        dcdate (str): ISO8601 日付時刻形式
-        dctvalid (str): ISO8601 日付時刻形式
-        odptfrequency (int): 更新頻度(秒)、指定された秒数以降にリクエストを行うことで、最新値が取得される。 Example: 30.
-        odptrailway (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odpttrain_number (str): 列車番号 Example: B1045S.
-        odpttrain_type (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptorigin_station (List[str]): 列車の始発駅のIDのリスト Example: [&#39;odpt.Station:TokyoMetro.Yurakucho.ShinKiba&#39;].
-        odptdestination_station (List[str]): 列車の終着駅のIDのリスト Example: [&#39;odpt.Station:TokyoMetro.Yurakucho.Wakoshi&#39;].
-        odptfrom_station (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptto_station (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptrail_direction (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptoperator (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptdelay (Union[Unset, int]): 遅延時間(秒)
-    &#34;&#34;&#34;
-
-    context: str
-    id: str
-    type: str
-    dcdate: str
-    dctvalid: str
-    odptfrequency: int
-    odptrailway: str
-    owlsame_as: str
-    odpttrain_number: str
-    odpttrain_type: str
-    odptorigin_station: List[str]
-    odptdestination_station: List[str]
-    odptfrom_station: str
-    odptto_station: str
-    odptrail_direction: str
-    odptoperator: str
-    odptdelay: Union[Unset, int] = UNSET
-    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
-
-    def to_dict(self) -&gt; Dict[str, Any]:
-        context = self.context
-
-        id = self.id
-
-        type = self.type
-
-        dcdate = self.dcdate
-
-        dctvalid = self.dctvalid
-
-        odptfrequency = self.odptfrequency
-
-        odptrailway = self.odptrailway
-
-        owlsame_as = self.owlsame_as
-
-        odpttrain_number = self.odpttrain_number
-
-        odpttrain_type = self.odpttrain_type
-
-        odptorigin_station = self.odptorigin_station
-
-        odptdestination_station = self.odptdestination_station
-
-        odptfrom_station = self.odptfrom_station
-
-        odptto_station = self.odptto_station
-
-        odptrail_direction = self.odptrail_direction
-
-        odptoperator = self.odptoperator
-
-        odptdelay = self.odptdelay
-
-        field_dict: Dict[str, Any] = {}
-        field_dict.update(self.additional_properties)
-        field_dict.update(
-            {
-                &#34;@context&#34;: context,
-                &#34;@id&#34;: id,
-                &#34;@type&#34;: type,
-                &#34;dc:date&#34;: dcdate,
-                &#34;dct:valid&#34;: dctvalid,
-                &#34;odpt:frequency&#34;: odptfrequency,
-                &#34;odpt:railway&#34;: odptrailway,
-                &#34;owl:sameAs&#34;: owlsame_as,
-                &#34;odpt:trainNumber&#34;: odpttrain_number,
-                &#34;odpt:trainType&#34;: odpttrain_type,
-                &#34;odpt:originStation&#34;: odptorigin_station,
-                &#34;odpt:destinationStation&#34;: odptdestination_station,
-                &#34;odpt:fromStation&#34;: odptfrom_station,
-                &#34;odpt:toStation&#34;: odptto_station,
-                &#34;odpt:railDirection&#34;: odptrail_direction,
-                &#34;odpt:operator&#34;: odptoperator,
-            }
-        )
-        if odptdelay is not UNSET:
-            field_dict[&#34;odpt:delay&#34;] = odptdelay
-
-        return field_dict
-
-    @classmethod
-    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
-        d = src_dict.copy()
-        context = d.pop(&#34;@context&#34;)
-
-        id = d.pop(&#34;@id&#34;)
-
-        type = d.pop(&#34;@type&#34;)
-
-        dcdate = d.pop(&#34;dc:date&#34;)
-
-        dctvalid = d.pop(&#34;dct:valid&#34;)
-
-        odptfrequency = d.pop(&#34;odpt:frequency&#34;)
-
-        odptrailway = d.pop(&#34;odpt:railway&#34;)
-
-        owlsame_as = d.pop(&#34;owl:sameAs&#34;)
-
-        odpttrain_number = d.pop(&#34;odpt:trainNumber&#34;)
-
-        odpttrain_type = d.pop(&#34;odpt:trainType&#34;)
-
-        odptorigin_station = cast(List[str], d.pop(&#34;odpt:originStation&#34;))
-
-        odptdestination_station = cast(List[str], d.pop(&#34;odpt:destinationStation&#34;))
-
-        odptfrom_station = d.pop(&#34;odpt:fromStation&#34;)
-
-        odptto_station = d.pop(&#34;odpt:toStation&#34;)
-
-        odptrail_direction = d.pop(&#34;odpt:railDirection&#34;)
-
-        odptoperator = d.pop(&#34;odpt:operator&#34;)
-
-        odptdelay = d.pop(&#34;odpt:delay&#34;, UNSET)
-
-        data_search_response = cls(
-            context=context,
-            id=id,
-            type=type,
-            dcdate=dcdate,
-            dctvalid=dctvalid,
-            odptfrequency=odptfrequency,
-            odptrailway=odptrailway,
-            owlsame_as=owlsame_as,
-            odpttrain_number=odpttrain_number,
-            odpttrain_type=odpttrain_type,
-            odptorigin_station=odptorigin_station,
-            odptdestination_station=odptdestination_station,
-            odptfrom_station=odptfrom_station,
-            odptto_station=odptto_station,
-            odptrail_direction=odptrail_direction,
-            odptoperator=odptoperator,
-            odptdelay=odptdelay,
-        )
-
-        data_search_response.additional_properties = d
-        return data_search_response
-
-    @property
-    def additional_keys(self) -&gt; List[str]:
-        return list(self.additional_properties.keys())
-
-    def __getitem__(self, key: str) -&gt; Any:
-        return self.additional_properties[key]
-
-    def __setitem__(self, key: str, value: Any) -&gt; None:
-        self.additional_properties[key] = value
-
-    def __delitem__(self, key: str) -&gt; None:
-        del self.additional_properties[key]
-
-    def __contains__(self, key: str) -&gt; bool:
-        return key in self.additional_properties</code></pre>
-</details>
-<h3>Static methods</h3>
-<dl>
-<dt id="python_odpt.models.DataSearchResponse.from_dict"><code class="name flex">
-<span>def <span class="ident">from_dict</span></span>(<span>src_dict: Dict[str, Any]) ‑> ~T</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Instance variables</h3>
-<dl>
-<dt id="python_odpt.models.DataSearchResponse.additional_keys"><code class="name">prop <span class="ident">additional_keys</span> : List[str]</code></dt>
-<dd>
-<div class="desc"></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@property
-def additional_keys(self) -&gt; List[str]:
-    return list(self.additional_properties.keys())</code></pre>
-</details>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.additional_properties"><code class="name">var <span class="ident">additional_properties</span> : Dict[str, Any]</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.context"><code class="name">var <span class="ident">context</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.dcdate"><code class="name">var <span class="ident">dcdate</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.id"><code class="name">var <span class="ident">id</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptdelay"><code class="name">var <span class="ident">odptdelay</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptdestination_station"><code class="name">var <span class="ident">odptdestination_station</span> : List[str]</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptfrequency"><code class="name">var <span class="ident">odptfrequency</span> : int</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptfrom_station"><code class="name">var <span class="ident">odptfrom_station</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptoperator"><code class="name">var <span class="ident">odptoperator</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptorigin_station"><code class="name">var <span class="ident">odptorigin_station</span> : List[str]</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptrail_direction"><code class="name">var <span class="ident">odptrail_direction</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptrailway"><code class="name">var <span class="ident">odptrailway</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odptto_station"><code class="name">var <span class="ident">odptto_station</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odpttrain_number"><code class="name">var <span class="ident">odpttrain_number</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.odpttrain_type"><code class="name">var <span class="ident">odpttrain_type</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.owlsame_as"><code class="name">var <span class="ident">owlsame_as</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DataSearchResponse.type"><code class="name">var <span class="ident">type</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Methods</h3>
-<dl>
-<dt id="python_odpt.models.DataSearchResponse.to_dict"><code class="name flex">
-<span>def <span class="ident">to_dict</span></span>(<span>self) ‑> Dict[str, Any]</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-</dd>
 <dt id="python_odpt.models.DumpRDFType"><code class="flex name class">
 <span>class <span class="ident">DumpRDFType</span></span>
 <span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
@@ -4913,175 +4566,9 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 </dl>
 </dd>
-<dt id="python_odpt.models.DumpResponse"><code class="flex name class">
-<span>class <span class="ident">DumpResponse</span></span>
-<span>(</span><span>context: str, id: str, type: str, dctitle: str, owlsame_as: str)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>データダンプAPIのレスポンス</p>
-<h2 id="attributes">Attributes</h2>
-<dl>
-<dt><strong><code>context</code></strong> :&ensp;<code>str</code></dt>
-<dd>JSON-LD仕様に基づく @context のURL Example: <a href="http://vocab.odpt.org/context_odpt.jsonld.">http://vocab.odpt.org/context_odpt.jsonld.</a></dd>
-<dt><strong><code>id</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子</dd>
-<dt><strong><code>type</code></strong> :&ensp;<code>str</code></dt>
-<dd>クラス名 Example: odpt:Station.</dd>
-<dt><strong><code>dctitle</code></strong> :&ensp;<code>str</code></dt>
-<dd>駅名(日本語) Example: 東京.</dd>
-<dt><strong><code>owlsame_as</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-</dl>
-<p>Method generated by attrs for class DumpResponse.</p></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@_attrs_define
-class DumpResponse:
-    &#34;&#34;&#34;データダンプAPIのレスポンス
-
-    Attributes:
-        context (str): JSON-LD仕様に基づく @context のURL Example: http://vocab.odpt.org/context_odpt.jsonld.
-        id (str): 固有識別子
-        type (str): クラス名 Example: odpt:Station.
-        dctitle (str): 駅名(日本語) Example: 東京.
-        owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-    &#34;&#34;&#34;
-
-    context: str
-    id: str
-    type: str
-    dctitle: str
-    owlsame_as: str
-    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
-
-    def to_dict(self) -&gt; Dict[str, Any]:
-        context = self.context
-
-        id = self.id
-
-        type = self.type
-
-        dctitle = self.dctitle
-
-        owlsame_as = self.owlsame_as
-
-        field_dict: Dict[str, Any] = {}
-        field_dict.update(self.additional_properties)
-        field_dict.update(
-            {
-                &#34;@context&#34;: context,
-                &#34;@id&#34;: id,
-                &#34;@type&#34;: type,
-                &#34;dc:title&#34;: dctitle,
-                &#34;owl:sameAs&#34;: owlsame_as,
-            }
-        )
-
-        return field_dict
-
-    @classmethod
-    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
-        d = src_dict.copy()
-        context = d.pop(&#34;@context&#34;)
-
-        id = d.pop(&#34;@id&#34;)
-
-        type = d.pop(&#34;@type&#34;)
-
-        dctitle = d.pop(&#34;dc:title&#34;)
-
-        owlsame_as = d.pop(&#34;owl:sameAs&#34;)
-
-        dump_response = cls(
-            context=context,
-            id=id,
-            type=type,
-            dctitle=dctitle,
-            owlsame_as=owlsame_as,
-        )
-
-        dump_response.additional_properties = d
-        return dump_response
-
-    @property
-    def additional_keys(self) -&gt; List[str]:
-        return list(self.additional_properties.keys())
-
-    def __getitem__(self, key: str) -&gt; Any:
-        return self.additional_properties[key]
-
-    def __setitem__(self, key: str, value: Any) -&gt; None:
-        self.additional_properties[key] = value
-
-    def __delitem__(self, key: str) -&gt; None:
-        del self.additional_properties[key]
-
-    def __contains__(self, key: str) -&gt; bool:
-        return key in self.additional_properties</code></pre>
-</details>
-<h3>Static methods</h3>
-<dl>
-<dt id="python_odpt.models.DumpResponse.from_dict"><code class="name flex">
-<span>def <span class="ident">from_dict</span></span>(<span>src_dict: Dict[str, Any]) ‑> ~T</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Instance variables</h3>
-<dl>
-<dt id="python_odpt.models.DumpResponse.additional_keys"><code class="name">prop <span class="ident">additional_keys</span> : List[str]</code></dt>
-<dd>
-<div class="desc"></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@property
-def additional_keys(self) -&gt; List[str]:
-    return list(self.additional_properties.keys())</code></pre>
-</details>
-</dd>
-<dt id="python_odpt.models.DumpResponse.additional_properties"><code class="name">var <span class="ident">additional_properties</span> : Dict[str, Any]</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DumpResponse.context"><code class="name">var <span class="ident">context</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DumpResponse.dctitle"><code class="name">var <span class="ident">dctitle</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DumpResponse.id"><code class="name">var <span class="ident">id</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DumpResponse.owlsame_as"><code class="name">var <span class="ident">owlsame_as</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.DumpResponse.type"><code class="name">var <span class="ident">type</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Methods</h3>
-<dl>
-<dt id="python_odpt.models.DumpResponse.to_dict"><code class="name flex">
-<span>def <span class="ident">to_dict</span></span>(<span>self) ‑> Dict[str, Any]</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-</dd>
 <dt id="python_odpt.models.FlightInformationArrival"><code class="flex name class">
 <span>class <span class="ident">FlightInformationArrival</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.flight_information_arrival_type.FlightInformationArrivalType" href="flight_information_arrival_type.html#python_odpt.models.flight_information_arrival_type.FlightInformationArrivalType">FlightInformationArrivalType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptflight_number: List[str], odptarrival_airport: str, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptairline: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_information_summary: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptflight_information_text: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptscheduled_arrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptestimated_arrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptactual_arrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptarrival_airport_terminal: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptarrival_gate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptbaggage_claim: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptorigin_airport: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptvia_airport: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptaircraft_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.flight_information_arrival_type.FlightInformationArrivalType" href="flight_information_arrival_type.html#python_odpt.models.flight_information_arrival_type.FlightInformationArrivalType">FlightInformationArrivalType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptflight_number: List[str],<br>odptarrival_airport: str,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptairline: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_status: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_information_summary: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_information_text: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptscheduled_arrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptestimated_arrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptactual_arrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptarrival_airport_terminal: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptarrival_gate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptbaggage_claim: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptorigin_airport: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_airport: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptaircraft_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>フライト到着情報</p>
@@ -5546,7 +5033,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.FlightInformationDeparture"><code class="flex name class">
 <span>class <span class="ident">FlightInformationDeparture</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.flight_information_departure_type.FlightInformationDepartureType" href="flight_information_departure_type.html#python_odpt.models.flight_information_departure_type.FlightInformationDepartureType">FlightInformationDepartureType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptflight_number: List[str], odptdeparture_airport: str, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptairline: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_information_summary: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptflight_information_text: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptscheduled_departure_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptestimated_departure_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptactual_departure_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_airport_terminal: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_gate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptcheck_in_counter: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptdestination_airport: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptvia_airport: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptaircraft_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.flight_information_departure_type.FlightInformationDepartureType" href="flight_information_departure_type.html#python_odpt.models.flight_information_departure_type.FlightInformationDepartureType">FlightInformationDepartureType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptflight_number: List[str],<br>odptdeparture_airport: str,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptairline: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_status: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_information_summary: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_information_text: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptscheduled_departure_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptestimated_departure_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptactual_departure_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_airport_terminal: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_gate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptcheck_in_counter: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_airport: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_airport: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptaircraft_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>フライト出発情報</p>
@@ -6013,7 +5500,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.FlightSchedule"><code class="flex name class">
 <span>class <span class="ident">FlightSchedule</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.flight_schedule_type.FlightScheduleType" href="flight_schedule_type.html#python_odpt.models.flight_schedule_type.FlightScheduleType">FlightScheduleType</a>, owlsame_as: str, odptoperator: str, odptcalendar: str, odptorigin_airport: str, odptdestination_airport: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_schedule_object: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[ForwardRef('<a title="python_odpt.models.FlightScheduleObject" href="#python_odpt.models.FlightScheduleObject">FlightScheduleObject</a>')]] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.flight_schedule_type.FlightScheduleType" href="flight_schedule_type.html#python_odpt.models.flight_schedule_type.FlightScheduleType">FlightScheduleType</a>,<br>owlsame_as: str,<br>odptoperator: str,<br>odptcalendar: str,<br>odptorigin_airport: str,<br>odptdestination_airport: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_schedule_object: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[ForwardRef('<a title="python_odpt.models.FlightScheduleObject" href="#python_odpt.models.FlightScheduleObject">FlightScheduleObject</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>フライト時刻表</p>
@@ -6262,7 +5749,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.FlightScheduleObject"><code class="flex name class">
 <span>class <span class="ident">FlightScheduleObject</span></span>
-<span>(</span><span>odptairline: str, odptflight_number: List[str], odptorigin_time: str, odptdestination_time: str, odptorigin_day_difference: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptdestination_day_difference: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptvia_airport: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptaircraft_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptis_valid_from: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptis_valid_to: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptairline: str,<br>odptflight_number: List[str],<br>odptorigin_time: str,<br>odptdestination_time: str,<br>odptorigin_day_difference: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_day_difference: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_airport: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptaircraft_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptis_valid_from: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptis_valid_to: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>フライトスケジュールオブジェクト</p>
@@ -6559,7 +6046,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.FlightStatus"><code class="flex name class">
 <span>class <span class="ident">FlightStatus</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.flight_status_type.FlightStatusType" href="flight_status_type.html#python_odpt.models.flight_status_type.FlightStatusType">FlightStatusType</a>, owlsame_as: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptflight_status_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.flight_status_type.FlightStatusType" href="flight_status_type.html#python_odpt.models.flight_status_type.FlightStatusType">FlightStatusType</a>,<br>owlsame_as: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptflight_status_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>フライト状況</p>
@@ -6794,7 +6281,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.MultilingualTitle"><code class="flex name class">
 <span>class <span class="ident">MultilingualTitle</span></span>
-<span>(</span><span>ja: str, en: str, ko: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, ja_hrkt: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, zh_hans: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, zh_hant: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>ja: str,<br>en: str,<br>ko: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>ja_hrkt: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>zh_hans: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>zh_hant: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>多言語対応のタイトル</p>
@@ -6866,9 +6353,9 @@ class MultilingualTitle:
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
         d = src_dict.copy()
-        ja = d.pop(&#34;ja&#34;)
+        ja = d.pop(&#34;ja&#34;, UNSET)
 
-        en = d.pop(&#34;en&#34;)
+        en = d.pop(&#34;en&#34;, UNSET)
 
         ko = d.pop(&#34;ko&#34;, UNSET)
 
@@ -6941,19 +6428,19 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.MultilingualTitle.ja_hrkt"><code class="name">var <span class="ident">ja_hrkt</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.MultilingualTitle.ja_hrkt"><code class="name">var <span class="ident">ja_hrkt</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.MultilingualTitle.ko"><code class="name">var <span class="ident">ko</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.MultilingualTitle.ko"><code class="name">var <span class="ident">ko</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.MultilingualTitle.zh_hans"><code class="name">var <span class="ident">zh_hans</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.MultilingualTitle.zh_hans"><code class="name">var <span class="ident">zh_hans</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.MultilingualTitle.zh_hant"><code class="name">var <span class="ident">zh_hant</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.MultilingualTitle.zh_hant"><code class="name">var <span class="ident">zh_hant</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -7063,7 +6550,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.Operator"><code class="flex name class">
 <span>class <span class="ident">Operator</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.operator_type.OperatorType" href="operator_type.html#python_odpt.models.operator_type.OperatorType">OperatorType</a>, owlsame_as: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptoperator_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.operator_type.OperatorType" href="operator_type.html#python_odpt.models.operator_type.OperatorType">OperatorType</a>,<br>owlsame_as: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptoperator_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>公共交通機関の事業者を扱うクラス</p>
@@ -7298,7 +6785,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.PassengerSurvey"><code class="flex name class">
 <span>class <span class="ident">PassengerSurvey</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.passenger_survey_type.PassengerSurveyType" href="passenger_survey_type.html#python_odpt.models.passenger_survey_type.PassengerSurveyType">PassengerSurveyType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptstation: List[str], odptrailway: List[str], odptinclude_alighting: bool, odptpassenger_survey_object: List[ForwardRef('<a title="python_odpt.models.PassengerSurveyObject" href="#python_odpt.models.PassengerSurveyObject">PassengerSurveyObject</a>')])</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.passenger_survey_type.PassengerSurveyType" href="passenger_survey_type.html#python_odpt.models.passenger_survey_type.PassengerSurveyType">PassengerSurveyType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptstation: List[str],<br>odptrailway: List[str],<br>odptinclude_alighting: bool,<br>odptpassenger_survey_object: List[ForwardRef('<a title="python_odpt.models.PassengerSurveyObject" href="#python_odpt.models.PassengerSurveyObject">PassengerSurveyObject</a>')])</span>
 </code></dt>
 <dd>
 <div class="desc"><p>駅の乗降人員数または乗車人員数</p>
@@ -7736,7 +7223,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.PlaceSearchResponse"><code class="flex name class">
 <span>class <span class="ident">PlaceSearchResponse</span></span>
-<span>(</span><span>context: str, id: str, type: str, dcdate: str, dctitle: str, geolat: float, geolong: float, owlsame_as: str, odptrailway: str, odptoperator: str, odptstation_code: str, odptstation_title: <a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>, odptpassenger_survey: List[str], odptstation_timetable: List[str], odptconnecting_railway: List[str], odptconnecting_station: List[str])</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: str,<br>dcdate: str,<br>dctitle: str,<br>geolat: float,<br>geolong: float,<br>owlsame_as: str,<br>odptrailway: str,<br>odptoperator: str,<br>odptstation_code: str,<br>odptstation_title: <a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>,<br>odptpassenger_survey: List[str],<br>odptstation_timetable: List[str],<br>odptconnecting_railway: List[str],<br>odptconnecting_station: List[str])</span>
 </code></dt>
 <dd>
 <div class="desc"><p>地物情報検索APIのレスポンス</p>
@@ -8066,7 +7553,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.RailDirection"><code class="flex name class">
 <span>class <span class="ident">RailDirection</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.rail_direction_type.RailDirectionType" href="rail_direction_type.html#python_odpt.models.rail_direction_type.RailDirectionType">RailDirectionType</a>, owlsame_as: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptrail_direction_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.rail_direction_type.RailDirectionType" href="rail_direction_type.html#python_odpt.models.rail_direction_type.RailDirectionType">RailDirectionType</a>,<br>owlsame_as: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptrail_direction_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>列車の進行方向</p>
@@ -8301,7 +7788,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.Railway"><code class="flex name class">
 <span>class <span class="ident">Railway</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.railway_type.RailwayType" href="railway_type.html#python_odpt.models.railway_type.RailwayType">RailwayType</a>, dcdate: str, owlsame_as: str, dctitle: str, odptoperator: str, odptstation_order: List[ForwardRef('<a title="python_odpt.models.StationOrder" href="#python_odpt.models.StationOrder">StationOrder</a>')], odptrailway_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptkana: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptline_code: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptcolor: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, ugregion: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.RailwayUgregion" href="#python_odpt.models.RailwayUgregion">RailwayUgregion</a>')] = &lt;python_odpt.types.Unset object&gt;, odptascending_rail_direction: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdescending_rail_direction: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.railway_type.RailwayType" href="railway_type.html#python_odpt.models.railway_type.RailwayType">RailwayType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>dctitle: str,<br>odptoperator: str,<br>odptstation_order: List[ForwardRef('<a title="python_odpt.models.StationOrder" href="#python_odpt.models.StationOrder">StationOrder</a>')],<br>odptrailway_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptkana: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptline_code: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptcolor: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>ugregion: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.RailwayUgregion" href="#python_odpt.models.RailwayUgregion">RailwayUgregion</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptascending_rail_direction: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdescending_rail_direction: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>鉄道路線(運行系統)の情報</p>
@@ -8641,7 +8128,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.RailwayFare"><code class="flex name class">
 <span>class <span class="ident">RailwayFare</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.railway_fare_type.RailwayFareType" href="railway_fare_type.html#python_odpt.models.railway_fare_type.RailwayFareType">RailwayFareType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptfrom_station: str, odptto_station: str, odptticket_fare: int, dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptchild_ticket_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptchild_ic_card_fare: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptvia_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptvia_railway: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptticket_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptpayment_method: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.railway_fare_type.RailwayFareType" href="railway_fare_type.html#python_odpt.models.railway_fare_type.RailwayFareType">RailwayFareType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptfrom_station: str,<br>odptto_station: str,<br>odptticket_fare: int,<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptic_card_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptchild_ticket_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptchild_ic_card_fare: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_railway: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptticket_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptpayment_method: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>2駅間の運賃情報</p>
@@ -8929,11 +8416,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.dctissued"><code class="name">var <span class="ident">dctissued</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.RailwayFare.dctissued"><code class="name">var <span class="ident">dctissued</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.RailwayFare.dctvalid"><code class="name">var <span class="ident">dctvalid</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -8941,11 +8428,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptchild_ic_card_fare"><code class="name">var <span class="ident">odptchild_ic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptchild_ic_card_fare"><code class="name">var <span class="ident">odptchild_ic_card_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptchild_ticket_fare"><code class="name">var <span class="ident">odptchild_ticket_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptchild_ticket_fare"><code class="name">var <span class="ident">odptchild_ticket_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -8953,7 +8440,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptic_card_fare"><code class="name">var <span class="ident">odptic_card_fare</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptic_card_fare"><code class="name">var <span class="ident">odptic_card_fare</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -8961,7 +8448,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptpayment_method"><code class="name">var <span class="ident">odptpayment_method</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptpayment_method"><code class="name">var <span class="ident">odptpayment_method</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str]</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -8969,7 +8456,7 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptticket_type"><code class="name">var <span class="ident">odptticket_type</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptticket_type"><code class="name">var <span class="ident">odptticket_type</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -8977,11 +8464,11 @@ def additional_keys(self) -&gt; List[str]:
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptvia_railway"><code class="name">var <span class="ident">odptvia_railway</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptvia_railway"><code class="name">var <span class="ident">odptvia_railway</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str]</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="python_odpt.models.RailwayFare.odptvia_station"><code class="name">var <span class="ident">odptvia_station</span> : Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]]</code></dt>
+<dt id="python_odpt.models.RailwayFare.odptvia_station"><code class="name">var <span class="ident">odptvia_station</span> : <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str]</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -9146,337 +8633,9 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 </dl>
 </dd>
-<dt id="python_odpt.models.RetrieveResponse"><code class="flex name class">
-<span>class <span class="ident">RetrieveResponse</span></span>
-<span>(</span><span>context: str, id: str, type: str, dcdate: str, dctitle: str, geolat: float, geolong: float, owlsame_as: str, odptrailway: str, odptoperator: str, odptstation_code: str, odptstation_title: <a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>, odptpassenger_survey: List[str], odptstation_timetable: List[str], odptconnecting_railway: List[str], odptconnecting_station: List[str])</span>
-</code></dt>
-<dd>
-<div class="desc"><p>データ取得APIのレスポンス</p>
-<h2 id="attributes">Attributes</h2>
-<dl>
-<dt><strong><code>context</code></strong> :&ensp;<code>str</code></dt>
-<dd>JSON-LD仕様に基づく @context のURL Example: <a href="http://vocab.odpt.org/context_odpt_Station.jsonld.">http://vocab.odpt.org/context_odpt_Station.jsonld.</a></dd>
-<dt><strong><code>id</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子</dd>
-<dt><strong><code>type</code></strong> :&ensp;<code>str</code></dt>
-<dd>クラス名 Example: odpt:Station.</dd>
-<dt><strong><code>dcdate</code></strong> :&ensp;<code>str</code></dt>
-<dd>ISO8601 日付時刻形式</dd>
-<dt><strong><code>dctitle</code></strong> :&ensp;<code>str</code></dt>
-<dd>駅名(日本語) Example: 上野.</dd>
-<dt><strong><code>geolat</code></strong> :&ensp;<code>float</code></dt>
-<dd>緯度 Example: 35.711835.</dd>
-<dt><strong><code>geolong</code></strong> :&ensp;<code>float</code></dt>
-<dd>経度 Example: 139.775625.</dd>
-<dt><strong><code>owlsame_as</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptrailway</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptoperator</code></strong> :&ensp;<code>str</code></dt>
-<dd>固有識別子の別名 多くが<code>odpt.hoge:fuga</code>形式</dd>
-<dt><strong><code>odptstation_code</code></strong> :&ensp;<code>str</code></dt>
-<dd>駅コード Example: G16.</dd>
-<dt><strong><code>odptstation_title</code></strong> :&ensp;<code><a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a></code></dt>
-<dd>多言語対応のタイトル</dd>
-<dt><strong><code>odptpassenger_survey</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>駅乗降人員数を表すIDのリスト Example: ['odpt.PassengerSurvey:TokyoMetro.Ueno'].</dd>
-<dt><strong><code>odptstation_timetable</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>駅時刻表を表すIDのリスト Example:
-['odpt.StationTimetable:TokyoMetro.Ginza.Ueno.TokyoMetro.Shibuya.Weekday'].</dd>
-<dt><strong><code>odptconnecting_railway</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>乗り換え可能路線のIDのリスト Example: ['odpt.Railway:TokyoMetro.Hibiya',
-'odpt.Railway:JR-East.AkitaShinkansen'].</dd>
-<dt><strong><code>odptconnecting_station</code></strong> :&ensp;<code>List[str]</code></dt>
-<dd>乗り換え可能駅のIDのリスト Example: ['odpt.Station:TokyoMetro.Hibiya.Ueno',
-'odpt.Station:JR-East.AkitaShinkansen.Ueno'].</dd>
-</dl>
-<p>Method generated by attrs for class RetrieveResponse.</p></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@_attrs_define
-class RetrieveResponse:
-    &#34;&#34;&#34;データ取得APIのレスポンス
-
-    Attributes:
-        context (str): JSON-LD仕様に基づく @context のURL Example: http://vocab.odpt.org/context_odpt_Station.jsonld.
-        id (str): 固有識別子
-        type (str): クラス名 Example: odpt:Station.
-        dcdate (str): ISO8601 日付時刻形式
-        dctitle (str): 駅名(日本語) Example: 上野.
-        geolat (float): 緯度 Example: 35.711835.
-        geolong (float): 経度 Example: 139.775625.
-        owlsame_as (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptrailway (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptoperator (str): 固有識別子の別名 多くが`odpt.hoge:fuga`形式
-        odptstation_code (str): 駅コード Example: G16.
-        odptstation_title (MultilingualTitle): 多言語対応のタイトル
-        odptpassenger_survey (List[str]): 駅乗降人員数を表すIDのリスト Example: [&#39;odpt.PassengerSurvey:TokyoMetro.Ueno&#39;].
-        odptstation_timetable (List[str]): 駅時刻表を表すIDのリスト Example:
-            [&#39;odpt.StationTimetable:TokyoMetro.Ginza.Ueno.TokyoMetro.Shibuya.Weekday&#39;].
-        odptconnecting_railway (List[str]): 乗り換え可能路線のIDのリスト Example: [&#39;odpt.Railway:TokyoMetro.Hibiya&#39;,
-            &#39;odpt.Railway:JR-East.AkitaShinkansen&#39;].
-        odptconnecting_station (List[str]): 乗り換え可能駅のIDのリスト Example: [&#39;odpt.Station:TokyoMetro.Hibiya.Ueno&#39;,
-            &#39;odpt.Station:JR-East.AkitaShinkansen.Ueno&#39;].
-    &#34;&#34;&#34;
-
-    context: str
-    id: str
-    type: str
-    dcdate: str
-    dctitle: str
-    geolat: float
-    geolong: float
-    owlsame_as: str
-    odptrailway: str
-    odptoperator: str
-    odptstation_code: str
-    odptstation_title: &#34;MultilingualTitle&#34;
-    odptpassenger_survey: List[str]
-    odptstation_timetable: List[str]
-    odptconnecting_railway: List[str]
-    odptconnecting_station: List[str]
-    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
-
-    def to_dict(self) -&gt; Dict[str, Any]:
-        context = self.context
-
-        id = self.id
-
-        type = self.type
-
-        dcdate = self.dcdate
-
-        dctitle = self.dctitle
-
-        geolat = self.geolat
-
-        geolong = self.geolong
-
-        owlsame_as = self.owlsame_as
-
-        odptrailway = self.odptrailway
-
-        odptoperator = self.odptoperator
-
-        odptstation_code = self.odptstation_code
-
-        odptstation_title = self.odptstation_title.to_dict()
-
-        odptpassenger_survey = self.odptpassenger_survey
-
-        odptstation_timetable = self.odptstation_timetable
-
-        odptconnecting_railway = self.odptconnecting_railway
-
-        odptconnecting_station = self.odptconnecting_station
-
-        field_dict: Dict[str, Any] = {}
-        field_dict.update(self.additional_properties)
-        field_dict.update(
-            {
-                &#34;@context&#34;: context,
-                &#34;@id&#34;: id,
-                &#34;@type&#34;: type,
-                &#34;dc:date&#34;: dcdate,
-                &#34;dc:title&#34;: dctitle,
-                &#34;geo:lat&#34;: geolat,
-                &#34;geo:long&#34;: geolong,
-                &#34;owl:sameAs&#34;: owlsame_as,
-                &#34;odpt:railway&#34;: odptrailway,
-                &#34;odpt:operator&#34;: odptoperator,
-                &#34;odpt:stationCode&#34;: odptstation_code,
-                &#34;odpt:stationTitle&#34;: odptstation_title,
-                &#34;odpt:passengerSurvey&#34;: odptpassenger_survey,
-                &#34;odpt:stationTimetable&#34;: odptstation_timetable,
-                &#34;odpt:connectingRailway&#34;: odptconnecting_railway,
-                &#34;odpt:connectingStation&#34;: odptconnecting_station,
-            }
-        )
-
-        return field_dict
-
-    @classmethod
-    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -&gt; T:
-        from ..models.multilingual_title import MultilingualTitle
-
-        d = src_dict.copy()
-        context = d.pop(&#34;@context&#34;)
-
-        id = d.pop(&#34;@id&#34;)
-
-        type = d.pop(&#34;@type&#34;)
-
-        dcdate = d.pop(&#34;dc:date&#34;)
-
-        dctitle = d.pop(&#34;dc:title&#34;)
-
-        geolat = d.pop(&#34;geo:lat&#34;)
-
-        geolong = d.pop(&#34;geo:long&#34;)
-
-        owlsame_as = d.pop(&#34;owl:sameAs&#34;)
-
-        odptrailway = d.pop(&#34;odpt:railway&#34;)
-
-        odptoperator = d.pop(&#34;odpt:operator&#34;)
-
-        odptstation_code = d.pop(&#34;odpt:stationCode&#34;)
-
-        odptstation_title = MultilingualTitle.from_dict(d.pop(&#34;odpt:stationTitle&#34;))
-
-        odptpassenger_survey = cast(List[str], d.pop(&#34;odpt:passengerSurvey&#34;))
-
-        odptstation_timetable = cast(List[str], d.pop(&#34;odpt:stationTimetable&#34;))
-
-        odptconnecting_railway = cast(List[str], d.pop(&#34;odpt:connectingRailway&#34;))
-
-        odptconnecting_station = cast(List[str], d.pop(&#34;odpt:connectingStation&#34;))
-
-        retrieve_response = cls(
-            context=context,
-            id=id,
-            type=type,
-            dcdate=dcdate,
-            dctitle=dctitle,
-            geolat=geolat,
-            geolong=geolong,
-            owlsame_as=owlsame_as,
-            odptrailway=odptrailway,
-            odptoperator=odptoperator,
-            odptstation_code=odptstation_code,
-            odptstation_title=odptstation_title,
-            odptpassenger_survey=odptpassenger_survey,
-            odptstation_timetable=odptstation_timetable,
-            odptconnecting_railway=odptconnecting_railway,
-            odptconnecting_station=odptconnecting_station,
-        )
-
-        retrieve_response.additional_properties = d
-        return retrieve_response
-
-    @property
-    def additional_keys(self) -&gt; List[str]:
-        return list(self.additional_properties.keys())
-
-    def __getitem__(self, key: str) -&gt; Any:
-        return self.additional_properties[key]
-
-    def __setitem__(self, key: str, value: Any) -&gt; None:
-        self.additional_properties[key] = value
-
-    def __delitem__(self, key: str) -&gt; None:
-        del self.additional_properties[key]
-
-    def __contains__(self, key: str) -&gt; bool:
-        return key in self.additional_properties</code></pre>
-</details>
-<h3>Static methods</h3>
-<dl>
-<dt id="python_odpt.models.RetrieveResponse.from_dict"><code class="name flex">
-<span>def <span class="ident">from_dict</span></span>(<span>src_dict: Dict[str, Any]) ‑> ~T</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Instance variables</h3>
-<dl>
-<dt id="python_odpt.models.RetrieveResponse.additional_keys"><code class="name">prop <span class="ident">additional_keys</span> : List[str]</code></dt>
-<dd>
-<div class="desc"></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">@property
-def additional_keys(self) -&gt; List[str]:
-    return list(self.additional_properties.keys())</code></pre>
-</details>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.additional_properties"><code class="name">var <span class="ident">additional_properties</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.context"><code class="name">var <span class="ident">context</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.dcdate"><code class="name">var <span class="ident">dcdate</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.dctitle"><code class="name">var <span class="ident">dctitle</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.geolat"><code class="name">var <span class="ident">geolat</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.geolong"><code class="name">var <span class="ident">geolong</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.id"><code class="name">var <span class="ident">id</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptconnecting_railway"><code class="name">var <span class="ident">odptconnecting_railway</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptconnecting_station"><code class="name">var <span class="ident">odptconnecting_station</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptoperator"><code class="name">var <span class="ident">odptoperator</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptpassenger_survey"><code class="name">var <span class="ident">odptpassenger_survey</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptrailway"><code class="name">var <span class="ident">odptrailway</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptstation_code"><code class="name">var <span class="ident">odptstation_code</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptstation_timetable"><code class="name">var <span class="ident">odptstation_timetable</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.odptstation_title"><code class="name">var <span class="ident">odptstation_title</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.owlsame_as"><code class="name">var <span class="ident">owlsame_as</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-<dt id="python_odpt.models.RetrieveResponse.type"><code class="name">var <span class="ident">type</span></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-<h3>Methods</h3>
-<dl>
-<dt id="python_odpt.models.RetrieveResponse.to_dict"><code class="name flex">
-<span>def <span class="ident">to_dict</span></span>(<span>self) ‑> Dict[str, Any]</span>
-</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-</dd>
 <dt id="python_odpt.models.Station"><code class="flex name class">
 <span>class <span class="ident">Station</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.station_type.StationType" href="station_type.html#python_odpt.models.station_type.StationType">StationType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptrailway: str, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptstation_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptstation_code: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, geolong: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, geolat: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, float] = &lt;python_odpt.types.Unset object&gt;, ugregion: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.StationUgregion" href="#python_odpt.models.StationUgregion">StationUgregion</a>')] = &lt;python_odpt.types.Unset object&gt;, odptexit: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptconnecting_railway: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptconnecting_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptstation_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptpassenger_survey: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.station_type.StationType" href="station_type.html#python_odpt.models.station_type.StationType">StationType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptrailway: str,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_code: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>geolong: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>geolat: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | float = &lt;python_odpt.types.Unset object&gt;,<br>ugregion: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.StationUgregion" href="#python_odpt.models.StationUgregion">StationUgregion</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptexit: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptconnecting_railway: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptconnecting_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_timetable: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptpassenger_survey: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>駅情報</p>
@@ -9868,7 +9027,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.StationOrder"><code class="flex name class">
 <span>class <span class="ident">StationOrder</span></span>
-<span>(</span><span>odptstation: str, odptindex: int, odptstation_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptstation: str,<br>odptindex: int,<br>odptstation_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>駅の順序</p>
@@ -10016,7 +9175,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.StationTimetable"><code class="flex name class">
 <span>class <span class="ident">StationTimetable</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.station_timetable_type.StationTimetableType" href="station_timetable_type.html#python_odpt.models.station_timetable_type.StationTimetableType">StationTimetableType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptrailway: str, odptstation_timetable_object: List[ForwardRef('<a title="python_odpt.models.StationTimetableObject" href="#python_odpt.models.StationTimetableObject">StationTimetableObject</a>')], dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptrailway_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptstation: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptstation_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptrail_direction: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptcalendar: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.station_timetable_type.StationTimetableType" href="station_timetable_type.html#python_odpt.models.station_timetable_type.StationTimetableType">StationTimetableType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptrailway: str,<br>odptstation_timetable_object: List[ForwardRef('<a title="python_odpt.models.StationTimetableObject" href="#python_odpt.models.StationTimetableObject">StationTimetableObject</a>')],<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptrailway_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptstation: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptrail_direction: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptcalendar: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>駅時刻表情報</p>
@@ -10377,7 +9536,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.StationTimetableObject"><code class="flex name class">
 <span>class <span class="ident">StationTimetableObject</span></span>
-<span>(</span><span>odptarrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptorigin_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptdestination_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptvia_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptvia_railway: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odpttrain: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_number: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_name: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')]] = &lt;python_odpt.types.Unset object&gt;, odpttrain_owner: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptis_last: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptis_origin: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptplatform_number: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptplatform_name: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptcar_composition: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, int] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptarrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptorigin_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_railway: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_number: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_name: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_owner: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptis_last: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptis_origin: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptplatform_number: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptplatform_name: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptcar_composition: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | int = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>駅時刻表オブジェクト</p>
@@ -10906,7 +10065,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.TrainInformation"><code class="flex name class">
 <span>class <span class="ident">TrainInformation</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.train_information_type.TrainInformationType" href="train_information_type.html#python_odpt.models.train_information_type.TrainInformationType">TrainInformationType</a>, dcdate: str, owlsame_as: str, odpttime_of_origin: str, odptoperator: str, odpttrain_information_text: <a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptrailway: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_information_status: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptrail_direction: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_information_area: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odpttrain_information_kind: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptstation_from: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptstation_to: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_information_range: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odpttrain_information_cause: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odpttransfer_railways: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptresume_estimate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.train_information_type.TrainInformationType" href="train_information_type.html#python_odpt.models.train_information_type.TrainInformationType">TrainInformationType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odpttime_of_origin: str,<br>odptoperator: str,<br>odpttrain_information_text: <a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptrailway: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_information_status: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptrail_direction: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_information_area: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_information_kind: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_from: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptstation_to: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_information_range: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_information_cause: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odpttransfer_railways: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptresume_estimate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>列車運行情報</p>
@@ -11362,7 +10521,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.TrainTimetable"><code class="flex name class">
 <span>class <span class="ident">TrainTimetable</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.train_timetable_type.TrainTimetableType" href="train_timetable_type.html#python_odpt.models.train_timetable_type.TrainTimetableType">TrainTimetableType</a>, dcdate: str, owlsame_as: str, odptoperator: str, odptrailway: str, odpttrain_number: str, odpttrain_timetable_object: List[ForwardRef('<a title="python_odpt.models.TrainTimetableObject" href="#python_odpt.models.TrainTimetableObject">TrainTimetableObject</a>')], dctissued: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctvalid: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptrail_direction: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptcalendar: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_type: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_name: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')]] = &lt;python_odpt.types.Unset object&gt;, odpttrain_owner: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptorigin_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptdestination_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptvia_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptvia_railway: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptprevious_train_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptnext_train_timetable: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, List[str]] = &lt;python_odpt.types.Unset object&gt;, odptneed_extra_fee: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, bool] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.train_timetable_type.TrainTimetableType" href="train_timetable_type.html#python_odpt.models.train_timetable_type.TrainTimetableType">TrainTimetableType</a>,<br>dcdate: str,<br>owlsame_as: str,<br>odptoperator: str,<br>odptrailway: str,<br>odpttrain_number: str,<br>odpttrain_timetable_object: List[ForwardRef('<a title="python_odpt.models.TrainTimetableObject" href="#python_odpt.models.TrainTimetableObject">TrainTimetableObject</a>')],<br>dctissued: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctvalid: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptrail_direction: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptcalendar: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_type: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_name: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_owner: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptorigin_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptdestination_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptvia_railway: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptprevious_train_timetable: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptnext_train_timetable: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | List[str] = &lt;python_odpt.types.Unset object&gt;,<br>odptneed_extra_fee: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | bool = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>列車時刻表</p>
@@ -11876,7 +11035,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.TrainTimetableObject"><code class="flex name class">
 <span>class <span class="ident">TrainTimetableObject</span></span>
-<span>(</span><span>odptarrival_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptarrival_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_time: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptdeparture_station: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptplatform_number: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odptplatform_name: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;, odptnote: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>odptarrival_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptarrival_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_time: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptdeparture_station: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptplatform_number: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odptplatform_name: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;,<br>odptnote: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>列車時刻表オブジェクト</p>
@@ -12119,7 +11278,7 @@ def additional_keys(self) -&gt; List[str]:
 </dd>
 <dt id="python_odpt.models.TrainType"><code class="flex name class">
 <span>class <span class="ident">TrainType</span></span>
-<span>(</span><span>context: str, id: str, type: <a title="python_odpt.models.train_type_type.TrainTypeType" href="train_type_type.html#python_odpt.models.train_type_type.TrainTypeType">TrainTypeType</a>, owlsame_as: str, odptoperator: str, dcdate: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, dctitle: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, str] = &lt;python_odpt.types.Unset object&gt;, odpttrain_type_title: Union[<a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a>, ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>')] = &lt;python_odpt.types.Unset object&gt;)</span>
+<span>(</span><span>context: str,<br>id: str,<br>type: <a title="python_odpt.models.train_type_type.TrainTypeType" href="train_type_type.html#python_odpt.models.train_type_type.TrainTypeType">TrainTypeType</a>,<br>owlsame_as: str,<br>odptoperator: str,<br>dcdate: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>dctitle: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | str = &lt;python_odpt.types.Unset object&gt;,<br>odpttrain_type_title: <a title="python_odpt.types.Unset" href="../types.html#python_odpt.types.Unset">Unset</a> | ForwardRef('<a title="python_odpt.models.MultilingualTitle" href="#python_odpt.models.MultilingualTitle">MultilingualTitle</a>') = &lt;python_odpt.types.Unset object&gt;)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>列車種別</p>
@@ -12406,9 +11565,7 @@ def additional_keys(self) -&gt; List[str]:
 <li><code><a title="python_odpt.models.busstop_pole_type" href="busstop_pole_type.html">python_odpt.models.busstop_pole_type</a></code></li>
 <li><code><a title="python_odpt.models.calendar" href="calendar.html">python_odpt.models.calendar</a></code></li>
 <li><code><a title="python_odpt.models.calendar_type" href="calendar_type.html">python_odpt.models.calendar_type</a></code></li>
-<li><code><a title="python_odpt.models.data_search_response" href="data_search_response.html">python_odpt.models.data_search_response</a></code></li>
 <li><code><a title="python_odpt.models.dump_rdf_type" href="dump_rdf_type.html">python_odpt.models.dump_rdf_type</a></code></li>
-<li><code><a title="python_odpt.models.dump_response" href="dump_response.html">python_odpt.models.dump_response</a></code></li>
 <li><code><a title="python_odpt.models.flight_information_arrival" href="flight_information_arrival.html">python_odpt.models.flight_information_arrival</a></code></li>
 <li><code><a title="python_odpt.models.flight_information_arrival_type" href="flight_information_arrival_type.html">python_odpt.models.flight_information_arrival_type</a></code></li>
 <li><code><a title="python_odpt.models.flight_information_departure" href="flight_information_departure.html">python_odpt.models.flight_information_departure</a></code></li>
@@ -12435,7 +11592,6 @@ def additional_keys(self) -&gt; List[str]:
 <li><code><a title="python_odpt.models.railway_fare_type" href="railway_fare_type.html">python_odpt.models.railway_fare_type</a></code></li>
 <li><code><a title="python_odpt.models.railway_type" href="railway_type.html">python_odpt.models.railway_type</a></code></li>
 <li><code><a title="python_odpt.models.railway_ugregion" href="railway_ugregion.html">python_odpt.models.railway_ugregion</a></code></li>
-<li><code><a title="python_odpt.models.retrieve_response" href="retrieve_response.html">python_odpt.models.retrieve_response</a></code></li>
 <li><code><a title="python_odpt.models.station" href="station.html">python_odpt.models.station</a></code></li>
 <li><code><a title="python_odpt.models.station_order" href="station_order.html">python_odpt.models.station_order</a></code></li>
 <li><code><a title="python_odpt.models.station_timetable" href="station_timetable.html">python_odpt.models.station_timetable</a></code></li>
@@ -12807,32 +11963,6 @@ def additional_keys(self) -&gt; List[str]:
 </ul>
 </li>
 <li>
-<h4><code><a title="python_odpt.models.DataSearchResponse" href="#python_odpt.models.DataSearchResponse">DataSearchResponse</a></code></h4>
-<ul class="">
-<li><code><a title="python_odpt.models.DataSearchResponse.additional_keys" href="#python_odpt.models.DataSearchResponse.additional_keys">additional_keys</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.additional_properties" href="#python_odpt.models.DataSearchResponse.additional_properties">additional_properties</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.context" href="#python_odpt.models.DataSearchResponse.context">context</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.dcdate" href="#python_odpt.models.DataSearchResponse.dcdate">dcdate</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.dctvalid" href="#python_odpt.models.DataSearchResponse.dctvalid">dctvalid</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.from_dict" href="#python_odpt.models.DataSearchResponse.from_dict">from_dict</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.id" href="#python_odpt.models.DataSearchResponse.id">id</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptdelay" href="#python_odpt.models.DataSearchResponse.odptdelay">odptdelay</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptdestination_station" href="#python_odpt.models.DataSearchResponse.odptdestination_station">odptdestination_station</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptfrequency" href="#python_odpt.models.DataSearchResponse.odptfrequency">odptfrequency</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptfrom_station" href="#python_odpt.models.DataSearchResponse.odptfrom_station">odptfrom_station</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptoperator" href="#python_odpt.models.DataSearchResponse.odptoperator">odptoperator</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptorigin_station" href="#python_odpt.models.DataSearchResponse.odptorigin_station">odptorigin_station</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptrail_direction" href="#python_odpt.models.DataSearchResponse.odptrail_direction">odptrail_direction</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptrailway" href="#python_odpt.models.DataSearchResponse.odptrailway">odptrailway</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odptto_station" href="#python_odpt.models.DataSearchResponse.odptto_station">odptto_station</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odpttrain_number" href="#python_odpt.models.DataSearchResponse.odpttrain_number">odpttrain_number</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.odpttrain_type" href="#python_odpt.models.DataSearchResponse.odpttrain_type">odpttrain_type</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.owlsame_as" href="#python_odpt.models.DataSearchResponse.owlsame_as">owlsame_as</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.to_dict" href="#python_odpt.models.DataSearchResponse.to_dict">to_dict</a></code></li>
-<li><code><a title="python_odpt.models.DataSearchResponse.type" href="#python_odpt.models.DataSearchResponse.type">type</a></code></li>
-</ul>
-</li>
-<li>
 <h4><code><a title="python_odpt.models.DumpRDFType" href="#python_odpt.models.DumpRDFType">DumpRDFType</a></code></h4>
 <ul class="">
 <li><code><a title="python_odpt.models.DumpRDFType.ODPTAIRPORT" href="#python_odpt.models.DumpRDFType.ODPTAIRPORT">ODPTAIRPORT</a></code></li>
@@ -12854,20 +11984,6 @@ def additional_keys(self) -&gt; List[str]:
 <li><code><a title="python_odpt.models.DumpRDFType.ODPTSTATIONTIMETABLE" href="#python_odpt.models.DumpRDFType.ODPTSTATIONTIMETABLE">ODPTSTATIONTIMETABLE</a></code></li>
 <li><code><a title="python_odpt.models.DumpRDFType.ODPTTRAINTIMETABLE" href="#python_odpt.models.DumpRDFType.ODPTTRAINTIMETABLE">ODPTTRAINTIMETABLE</a></code></li>
 <li><code><a title="python_odpt.models.DumpRDFType.ODPTTRAINTYPE" href="#python_odpt.models.DumpRDFType.ODPTTRAINTYPE">ODPTTRAINTYPE</a></code></li>
-</ul>
-</li>
-<li>
-<h4><code><a title="python_odpt.models.DumpResponse" href="#python_odpt.models.DumpResponse">DumpResponse</a></code></h4>
-<ul class="">
-<li><code><a title="python_odpt.models.DumpResponse.additional_keys" href="#python_odpt.models.DumpResponse.additional_keys">additional_keys</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.additional_properties" href="#python_odpt.models.DumpResponse.additional_properties">additional_properties</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.context" href="#python_odpt.models.DumpResponse.context">context</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.dctitle" href="#python_odpt.models.DumpResponse.dctitle">dctitle</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.from_dict" href="#python_odpt.models.DumpResponse.from_dict">from_dict</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.id" href="#python_odpt.models.DumpResponse.id">id</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.owlsame_as" href="#python_odpt.models.DumpResponse.owlsame_as">owlsame_as</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.to_dict" href="#python_odpt.models.DumpResponse.to_dict">to_dict</a></code></li>
-<li><code><a title="python_odpt.models.DumpResponse.type" href="#python_odpt.models.DumpResponse.type">type</a></code></li>
 </ul>
 </li>
 <li>
@@ -13230,31 +12346,6 @@ def additional_keys(self) -&gt; List[str]:
 </ul>
 </li>
 <li>
-<h4><code><a title="python_odpt.models.RetrieveResponse" href="#python_odpt.models.RetrieveResponse">RetrieveResponse</a></code></h4>
-<ul class="">
-<li><code><a title="python_odpt.models.RetrieveResponse.additional_keys" href="#python_odpt.models.RetrieveResponse.additional_keys">additional_keys</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.additional_properties" href="#python_odpt.models.RetrieveResponse.additional_properties">additional_properties</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.context" href="#python_odpt.models.RetrieveResponse.context">context</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.dcdate" href="#python_odpt.models.RetrieveResponse.dcdate">dcdate</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.dctitle" href="#python_odpt.models.RetrieveResponse.dctitle">dctitle</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.from_dict" href="#python_odpt.models.RetrieveResponse.from_dict">from_dict</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.geolat" href="#python_odpt.models.RetrieveResponse.geolat">geolat</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.geolong" href="#python_odpt.models.RetrieveResponse.geolong">geolong</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.id" href="#python_odpt.models.RetrieveResponse.id">id</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptconnecting_railway" href="#python_odpt.models.RetrieveResponse.odptconnecting_railway">odptconnecting_railway</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptconnecting_station" href="#python_odpt.models.RetrieveResponse.odptconnecting_station">odptconnecting_station</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptoperator" href="#python_odpt.models.RetrieveResponse.odptoperator">odptoperator</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptpassenger_survey" href="#python_odpt.models.RetrieveResponse.odptpassenger_survey">odptpassenger_survey</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptrailway" href="#python_odpt.models.RetrieveResponse.odptrailway">odptrailway</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptstation_code" href="#python_odpt.models.RetrieveResponse.odptstation_code">odptstation_code</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptstation_timetable" href="#python_odpt.models.RetrieveResponse.odptstation_timetable">odptstation_timetable</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.odptstation_title" href="#python_odpt.models.RetrieveResponse.odptstation_title">odptstation_title</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.owlsame_as" href="#python_odpt.models.RetrieveResponse.owlsame_as">owlsame_as</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.to_dict" href="#python_odpt.models.RetrieveResponse.to_dict">to_dict</a></code></li>
-<li><code><a title="python_odpt.models.RetrieveResponse.type" href="#python_odpt.models.RetrieveResponse.type">type</a></code></li>
-</ul>
-</li>
-<li>
 <h4><code><a title="python_odpt.models.Station" href="#python_odpt.models.Station">Station</a></code></h4>
 <ul class="">
 <li><code><a title="python_odpt.models.Station.additional_keys" href="#python_odpt.models.Station.additional_keys">additional_keys</a></code></li>
@@ -13485,7 +12576,7 @@ def additional_keys(self) -&gt; List[str]:
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.1</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.3</a>.</p>
 </footer>
 </body>
 </html>
