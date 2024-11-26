@@ -25,9 +25,7 @@ from .busstop_pole_timetable_type import BusstopPoleTimetableType
 from .busstop_pole_type import BusstopPoleType
 from .calendar import Calendar
 from .calendar_type import CalendarType
-from .data_search_response import DataSearchResponse
 from .dump_rdf_type import DumpRDFType
-from .dump_response import DumpResponse
 from .flight_information_arrival import FlightInformationArrival
 from .flight_information_arrival_type import FlightInformationArrivalType
 from .flight_information_departure import FlightInformationDeparture
