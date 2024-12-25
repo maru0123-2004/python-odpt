@@ -27,7 +27,7 @@ def _get_kwargs(
 
     _kwargs: Dict[str, Any] = {
         "method": "get",
-        "url": "/odpt/Calendar",
+        "url": "/odpt:Calendar",
         "params": params,
     }
 

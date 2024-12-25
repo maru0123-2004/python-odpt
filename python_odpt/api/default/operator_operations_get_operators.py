@@ -27,7 +27,7 @@ def _get_kwargs(
 
     _kwargs: Dict[str, Any] = {
         "method": "get",
-        "url": "/Operator",
+        "url": "/odpt:Operator",
         "params": params,
     }
 
