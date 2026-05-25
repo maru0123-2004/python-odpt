@@ -24,11 +24,11 @@ poetry add python-odpt
 
 # Usage
 ## Getting an ODPT Access Token
-Next, an ODPT access token is required to authenticate your API requests.
+First, an ODPT access token is required to authenticate your API requests.
 Access https://developer.odpt.org/ and submit the user registration form.
 After your registration is accepted, you can log in to the developer site and obtain your access token from the top right menu.
 
-## Getting start
+## Get started
 To use the library, you need to import the core client and the specific API functions you intend to use. The API endpoints are organized into separate modules, which keeps the namespace clean.
 To connect to the ODPT API, you need to initialize an Client. This client handles the base URL and connection pooling for your requests.
 ```python
@@ -36,7 +36,7 @@ To connect to the ODPT API, you need to initialize an Client. This client handle
 from python_odpt import Client
 
 # Import specific API endpoints (Example: searching something from datas)
-from python_odpt.api import data_search_operations_search
+from python_odpt.api import data_search
 
 API_URL = "https://api.odpt.org/api/v4/"
 ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"
@@ -44,21 +44,29 @@ ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"
 # Create the client instance
 client = Client(API_URL)
 
-res=data_search_operations_search.sync_detailed(client=client, aclconsumer_key=ACCESS_TOKEN, rdf_type="odpt:BusstopPole", predicate={"odpt:operator":"odpt.Operator:Toei"})
+res=data_search.sync_detailed(client=client,
+    aclconsumer_key=ACCESS_TOKEN, rdf_type="odpt:BusstopPole", 
+    predicate={"odpt:operator":"odpt.Operator:Toei"})
 
 print(res.status_code)
 print(res.parsed[0])
 ```
+
+> [!WARNING]
+> Do NOT write your access token on your code.
+> This is just for a example, the access token sould be provided by other safety way.
+> DO NOT PUBLISH CODE INCLUDING YOUR ACCESS TOKEN.
 
 ## First API Request Example
 The python-odpt library supports both synchronous and asynchronous requests. The functions typically end in .sync (for synchronous execution) or .asyncio (for asynchronous execution using async/await).
 Below is an example of fetching train operation information synchronously:
 ```python
 from python_odpt.models import OdptTrainInformation
+from python_odpt.api import get_train_information
 
 # Fetch train information synchronously
 # You can pass query parameters as keyword arguments
-train_info_list = get_odpt_train_information.sync(
+train_info_list = get_train_information.sync(
     client=client,
     aclconsumer_key=ACCESS_TOKEN,
     # Example query parameters:
@@ -69,20 +77,20 @@ if train_info_list:
     print(f"Retrieved {len(train_info_list)} records.")
 else:
     print("No data retrieved.")
-
 ```
+
 If you are writing an asynchronous application (e.g., using FastAPI, Discord.py, or standard asyncio), you can use the asynchronous variant:
 ```python
 import asyncio
 
 async def fetch_data():
-    train_info_list = await get_odpt_train_information.asyncio(client=client,
+    train_info_list = await get_train_information.asyncio(client=client,
                                    aclconsumer_key=ACCESS_TOKEN)
     print(f"Retrieved asynchronously: {len(train_info_list)}")
 
-# asyncio.run(fetch_data())
-
+asyncio.run(fetch_data())
 ```
+
 ## How to Inspect and Use Returned Data
 The ODPT API responses are automatically parsed into Python dataclasses/models by the library. This gives you full IDE autocompletion and type safety, eliminating the need to guess dictionary keys.
 ### Accessing Attributes
@@ -90,18 +98,19 @@ You can access properties directly using dot notation. Attributes that correspon
 ```python
 for train_info in train_info_list:
     # Access basic string properties
-    print(f"Railway ID: {train_info.odpt_railway}")
+    print(f"Railway ID: {train_info.odptrailway}")
     
     # Access nested/localized properties (e.g., Multilingual text)
-    if train_info.odpt_train_information_text:
-        print(f"Information (JA): {train_info.odpt_train_information_text.ja}")
-        print(f"Information (EN): {train_info.odpt_train_information_text.en}")
+    if train_info.odpttrain_information_text:
+        print(f"Information (JA): {train_info.odpttrain_information_text.ja}")
+        print(f"Information (EN): {train_info.odpttrain_information_text.en}")
     
     # Access date-time objects (automatically parsed into datetime instances)
-    print(f"Time of generation: {train_info.dc_date}")
+    print(f"Time of generation: {train_info.dcdate}")
     print("-" * 20)
 
 ```
+
 ### Fallback to Dictionary or JSON
 If you need to serialize the data for an API response, or if you prefer working with raw Python dictionaries, you can easily convert the model back:
 ```python
@@ -114,8 +123,8 @@ print(raw_dict["odpt:railway"])
 # Or convert to JSON
 json_string = json.dumps(raw_dict, ensure_ascii=False, indent=2)
 print(json_string)
-
 ```
+
 ### Handling Detailed Responses
 If you need access to the raw HTTP response (for example, to inspect headers or HTTP status codes), you can use .sync_detailed or .asyncio_detailed instead. This will return a Response object instead of just the parsed model.
 ```python
@@ -127,6 +136,21 @@ print(f"Headers: {response_obj.headers}")
 # The parsed data is available in the 'parsed' attribute
 if response_obj.parsed:
     for info in response_obj.parsed:
-        print(info.odpt_railway)
-
+        print(info.odptrailway)
 ```
+
+# ChangeLog
+- [v0.1.0](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.0) First release
+- [v0.1.2](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.2) Add missing dependencies
+- [v0.1.3](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.3) Fix handling for nullable field
+- [v0.1.4](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.4) Fix datadump API typing
+- [v0.1.5](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.5) Fix wrong endpoint
+- [v0.1.6](https://github.com/maru0123-2004/python-odpt/releases/tag/v0.1.6) Change import endpoint and update README
+```python
+# Before - Redundant
+from python_odpt.api.default import data_search_operations_search
+# After - Simple
+from python_odpt.api import data_search
+```
+The older endpoints will be held for compatibility.
+These will be removed on the next minor version up.
