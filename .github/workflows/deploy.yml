@@ -8,16 +8,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: 
+      - self-hosted
+      - linux/amd64
     permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
+      - uses: actions/checkout@v6
       - name: Build
         run: |
           pip install pdoc3 httpx attrs
